@@ -2,6 +2,12 @@
 
 Interactive bilingual (English/Chinese) visualization of Greek mythology characters, stories, sources, and relationships.
 
+## v1.2.1
+
+- Adds Nike, Styx, Pallas, Zelos, Kratos, Bia, and Eurybia with 20 passage-anchored relationships from Hesiod’s *Theogony*.
+- Adds Styx and her four children to the Titanomachy event.
+- Updates canonical JSON, JSON-LD, Turtle, manifest, and both interactive views.
+
 ## v1.2
 
 - Adds richer character details for type, story cycle, and generation.

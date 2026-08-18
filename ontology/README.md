@@ -1,16 +1,21 @@
-# Greek Mythology Ontology v1.0
+# Greek Mythology Ontology v1.2
 
-这是项目的第一个正式结构发布版（public beta）。
+这是项目 v1.2.1 数据补丁版（public beta）；本体结构仍保持 1.x 兼容。
 
 ## 规模
-- Characters: 148
-- Claims: 173
+- Characters: 155
+- Claims: 193
 - Events: 15
 - Places: 17
 - Sources: 12
 - Story Cycles: 10
 
-## v1.0 正式新增
+## v1.2 数据补丁新增
+- Nike、Styx、Pallas、Zelos、Kratos、Bia 与 Eurybia
+- 20 条《神谱》段落级关系主张
+- Titanomachy 参与者补充
+
+## v1.0 起提供的正式结构
 - Formal Ontology Schema
   - Classes
   - Object Properties
@@ -33,17 +38,17 @@
 
 ## 文件
 - `index.html` — 互动网页
-- `greek_mythology_ontology_v1_0.json` — canonical JSON
-- `greek_mythology_ontology_v1_0.jsonld` — JSON-LD
-- `greek_mythology_ontology_v1_0.ttl` — RDF/Turtle / OWL-compatible
-- `release_manifest_v1_0.json` — 发布清单
+- `greek_mythology_ontology_v1_2.json` — canonical JSON
+- `greek_mythology_ontology_v1_2.jsonld` — JSON-LD
+- `greek_mythology_ontology_v1_2.ttl` — RDF/Turtle / OWL-compatible
+- `release_manifest_v1_2.json` — 发布清单
 - `patch_schema_v1_0.json` — 编辑补丁 schema
 
 ## Publication Readiness
-- Review coverage: 6.9%
-- Anchor coverage: 12.7%
+- Review coverage: 16.6%
+- Anchor coverage: 20.2%
 - Stable URI coverage: 100.0%
 
 ## 重要说明
-v1.0 的“1.0”表示 **ontology 结构和发布格式已经稳定**，并不表示 173 条 Claim 已全部完成学术级逐条精校。
+1.x 表示 **ontology 结构和发布格式已经稳定**，并不表示 193 条 Claim 已全部完成学术级逐条精校。
 当前 release status 为 `public-beta`。后续 1.x 可以在不破坏 schema 的情况下持续提升出处质量。

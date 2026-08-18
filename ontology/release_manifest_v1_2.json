@@ -1,0 +1,47 @@
+{
+  "name": "Greek Mythology Ontology",
+  "version": "1.2.1",
+  "releaseId": "gmo-1.2.1-nike-styx-family",
+  "files": [
+    {
+      "name": "greek_mythology_ontology_v1_2.json",
+      "type": "application/json",
+      "role": "canonical dataset"
+    },
+    {
+      "name": "greek_mythology_ontology_v1_2.jsonld",
+      "type": "application/ld+json",
+      "role": "linked data export"
+    },
+    {
+      "name": "greek_mythology_ontology_v1_2.ttl",
+      "type": "text/turtle",
+      "role": "RDF/OWL-compatible export"
+    },
+    {
+      "name": "index.html",
+      "type": "text/html",
+      "role": "interactive viewer"
+    },
+    {
+      "name": "patch_schema_v1_2.json",
+      "type": "application/json",
+      "role": "editorial patch schema"
+    }
+  ],
+  "counts": {
+    "version": "1.2.1",
+    "characters": 155,
+    "claims": 193,
+    "events": 15,
+    "places": 17,
+    "sources": 12,
+    "cycles": 10
+  },
+  "quality": {
+    "reviewCoverage": 16.6,
+    "anchorCoverage": 20.2,
+    "stableUriCoverage": 100
+  },
+  "status": "public-beta"
+}
