@@ -18,7 +18,7 @@
 <body>
 <main class="page">
 <header class="hero">
-<h1>Greek Mythology Interactive Ontology</h1><div class="zh">希腊神话人物关系图谱 · v1.0 · Beta</div>
+<h1>Greek Mythology Interactive Ontology</h1><div class="zh">希腊神话人物关系图谱 · v1.2 · Beta</div>
 <p class="intro">Explore Greek mythology through characters, stories, and relationships. · 通过人物、故事与关系探索希腊神话。</p>
 </header>
 <nav class="topNav" aria-label="Main views"><a class="active" href="./generations.html">Generations · 谱系代际</a><a href="./index.html?view=genealogy">Genealogy · 谱系</a><a href="./index.html?view=network">Network · 网络</a><a href="./index.html?view=events">Events · 事件</a><a href="./index.html?view=sources">Sources · 来源</a><a href="./index.html?view=matrix">Matrix · 矩阵</a><a href="./index.html?view=quality">Quality · 质量</a><a href="./index.html?view=export">Export · 导出</a></nav>
@@ -52,5 +52,5 @@ fetch("./greek_mythology_ontology_v1_0.json").then(r=>r.json()).then(data=>{DATA
 document.addEventListener('click',e=>{const dropdown=document.querySelector('#cycleDropdown');if(dropdown.open&&!dropdown.contains(e.target))dropdown.removeAttribute('open')});
 document.querySelector("#close").addEventListener("click",()=>document.querySelector("#overlay").classList.remove("show"));document.querySelector("#overlay").addEventListener("click",e=>{if(e.target.id==="overlay")e.currentTarget.classList.remove("show")});addEventListener("keydown",e=>{if(e.key==="Escape")document.querySelector("#overlay").classList.remove("show")});
 </script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a2c31e1b1b22cee5',t:'MTc4NjkxMTM5NQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</body>
 </html>

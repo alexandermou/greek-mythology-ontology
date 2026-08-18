@@ -1,0 +1,13 @@
+{
+  "version": "1.0",
+  "description": "Patch format for editorial updates. Only listed fields are merged.",
+  "patches": {
+    "<claim_id>": {
+      "decision": "accept|reject|needs-source|pending",
+      "priority": "high|medium|low",
+      "note_zh": "free text",
+      "reviewStatus": "reviewed|unreviewed",
+      "confidence": "high|medium|low"
+    }
+  }
+}

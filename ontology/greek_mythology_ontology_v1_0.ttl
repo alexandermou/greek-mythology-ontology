@@ -1,0 +1,381 @@
+@prefix gmo: <https://example.org/greek-mythology-ontology/> .
+@prefix ent: <https://example.org/greek-mythology-ontology/entity/> .
+@prefix prop: <https://example.org/greek-mythology-ontology/property/> .
+@prefix claim: <https://example.org/greek-mythology-ontology/claim/> .
+@prefix src: <https://example.org/greek-mythology-ontology/source/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+gmo:Ontology a owl:Ontology ;
+  rdfs:label "Greek Mythology Ontology v1.0"@en ;
+  rdfs:label "希腊神话人物关系本体论 v1.0"@zh .
+
+gmo:MythologicalEntity a owl:Class ; rdfs:label "神话实体"@zh .
+gmo:Character a owl:Class ; rdfs:label "人物"@zh .
+gmo:Deity a owl:Class ; rdfs:label "神祇"@zh .
+gmo:PrimordialDeity a owl:Class ; rdfs:label "原初神"@zh .
+gmo:Titan a owl:Class ; rdfs:label "泰坦"@zh .
+gmo:Olympian a owl:Class ; rdfs:label "奥林匹斯神"@zh .
+gmo:Demigod a owl:Class ; rdfs:label "半神"@zh .
+gmo:Mortal a owl:Class ; rdfs:label "凡人"@zh .
+gmo:Hero a owl:Class ; rdfs:label "英雄"@zh .
+gmo:Creature a owl:Class ; rdfs:label "神话生物"@zh .
+gmo:Place a owl:Class ; rdfs:label "地点"@zh .
+gmo:Event a owl:Class ; rdfs:label "事件"@zh .
+gmo:Group a owl:Class ; rdfs:label "群体"@zh .
+gmo:Source a owl:Class ; rdfs:label "来源"@zh .
+gmo:Claim a owl:Class ; rdfs:label "主张/断言"@zh .
+
+prop:fatherOf a owl:ObjectProperty ; rdfs:label "父亲"@zh ; rdfs:domain gmo:Character ; rdfs:range gmo:Character .
+prop:motherOf a owl:ObjectProperty ; rdfs:label "母亲"@zh ; rdfs:domain gmo:Character ; rdfs:range gmo:Character .
+prop:parentOf a owl:ObjectProperty ; rdfs:label "亲代"@zh ; rdfs:domain gmo:Character ; rdfs:range gmo:Character .
+prop:spouseOf a owl:ObjectProperty ; rdfs:label "配偶"@zh ; rdfs:domain gmo:Character ; rdfs:range gmo:Character .
+prop:consortOf a owl:ObjectProperty ; rdfs:label "伴侣"@zh ; rdfs:domain gmo:Character ; rdfs:range gmo:Character .
+prop:siblingOf a owl:ObjectProperty ; rdfs:label "兄弟姐妹"@zh ; rdfs:domain gmo:Character ; rdfs:range gmo:Character .
+prop:emergedFrom a owl:ObjectProperty ; rdfs:label "特殊出生/产生于"@zh ; rdfs:domain gmo:MythologicalEntity ; rdfs:range gmo:MythologicalEntity .
+prop:kills a owl:ObjectProperty ; rdfs:label "杀死"@zh ; rdfs:domain gmo:Character ; rdfs:range gmo:Character .
+prop:defeats a owl:ObjectProperty ; rdfs:label "击败"@zh ; rdfs:domain gmo:Character ; rdfs:range gmo:MythologicalEntity .
+prop:helps a owl:ObjectProperty ; rdfs:label "帮助"@zh ; rdfs:domain gmo:Character ; rdfs:range gmo:Character .
+prop:commands a owl:ObjectProperty ; rdfs:label "命令"@zh ; rdfs:domain gmo:Character ; rdfs:range gmo:Character .
+prop:conflictsWith a owl:ObjectProperty ; rdfs:label "冲突"@zh ; rdfs:domain gmo:Character ; rdfs:range gmo:Character .
+prop:associatedWith a owl:ObjectProperty ; rdfs:label "关联"@zh ; rdfs:domain gmo:MythologicalEntity ; rdfs:range gmo:MythologicalEntity .
+prop:memberOf a owl:ObjectProperty ; rdfs:label "成员"@zh ; rdfs:domain gmo:Character ; rdfs:range gmo:Group .
+prop:engagedTo a owl:ObjectProperty ; rdfs:label "订婚"@zh ; rdfs:domain gmo:Character ; rdfs:range gmo:Character .
+
+ent:chaos a gmo:PrimordialDeity ; rdfs:label "Chaos"@en ; rdfs:label "混沌"@zh .
+ent:gaia a gmo:PrimordialDeity ; rdfs:label "Gaia"@en ; rdfs:label "盖亚"@zh .
+ent:tartarus a gmo:PrimordialDeity ; rdfs:label "Tartarus"@en ; rdfs:label "塔耳塔罗斯"@zh .
+ent:eros a gmo:PrimordialDeity ; rdfs:label "Eros"@en ; rdfs:label "厄洛斯"@zh .
+ent:erebus a gmo:PrimordialDeity ; rdfs:label "Erebus"@en ; rdfs:label "厄瑞玻斯"@zh .
+ent:nyx a gmo:PrimordialDeity ; rdfs:label "Nyx"@en ; rdfs:label "倪克斯"@zh .
+ent:uranus a gmo:PrimordialDeity ; rdfs:label "Uranus"@en ; rdfs:label "乌拉诺斯"@zh .
+ent:pontus a gmo:PrimordialDeity ; rdfs:label "Pontus"@en ; rdfs:label "蓬托斯"@zh .
+ent:ourea a gmo:PrimordialDeity ; rdfs:label "Ourea"@en ; rdfs:label "乌瑞亚"@zh .
+ent:oceanus a gmo:Titan ; rdfs:label "Oceanus"@en ; rdfs:label "俄刻阿诺斯"@zh .
+ent:tethys a gmo:Titan ; rdfs:label "Tethys"@en ; rdfs:label "忒堤斯"@zh .
+ent:hyperion a gmo:Titan ; rdfs:label "Hyperion"@en ; rdfs:label "许珀里翁"@zh .
+ent:theia a gmo:Titan ; rdfs:label "Theia"@en ; rdfs:label "忒亚"@zh .
+ent:coeus a gmo:Titan ; rdfs:label "Coeus"@en ; rdfs:label "科俄斯"@zh .
+ent:phoebe a gmo:Titan ; rdfs:label "Phoebe"@en ; rdfs:label "福柏"@zh .
+ent:iapetus a gmo:Titan ; rdfs:label "Iapetus"@en ; rdfs:label "伊阿珀托斯"@zh .
+ent:themis a gmo:Titan ; rdfs:label "Themis"@en ; rdfs:label "忒弥斯"@zh .
+ent:mnemosyne a gmo:Titan ; rdfs:label "Mnemosyne"@en ; rdfs:label "谟涅摩叙涅"@zh .
+ent:crius a gmo:Titan ; rdfs:label "Crius"@en ; rdfs:label "克利俄斯"@zh .
+ent:cronus a gmo:Titan ; rdfs:label "Cronus"@en ; rdfs:label "克洛诺斯"@zh .
+ent:rhea a gmo:Titan ; rdfs:label "Rhea"@en ; rdfs:label "瑞亚"@zh .
+ent:hestia a gmo:Olympian, gmo:Deity ; rdfs:label "Hestia"@en ; rdfs:label "赫斯提亚"@zh .
+ent:demeter a gmo:Olympian, gmo:Deity ; rdfs:label "Demeter"@en ; rdfs:label "得墨忒耳"@zh .
+ent:hera a gmo:Olympian, gmo:Deity ; rdfs:label "Hera"@en ; rdfs:label "赫拉"@zh .
+ent:hades a gmo:Deity ; rdfs:label "Hades"@en ; rdfs:label "哈迪斯"@zh .
+ent:poseidon a gmo:Olympian, gmo:Deity ; rdfs:label "Poseidon"@en ; rdfs:label "波塞冬"@zh .
+ent:zeus a gmo:Olympian, gmo:Deity ; rdfs:label "Zeus"@en ; rdfs:label "宙斯"@zh .
+ent:metis a gmo:Deity ; rdfs:label "Metis"@en ; rdfs:label "墨提斯"@zh .
+ent:leto a gmo:Deity ; rdfs:label "Leto"@en ; rdfs:label "勒托"@zh .
+ent:maia a gmo:Deity ; rdfs:label "Maia"@en ; rdfs:label "迈亚"@zh .
+ent:semele a gmo:Mortal ; rdfs:label "Semele"@en ; rdfs:label "塞墨勒"@zh .
+ent:danae a gmo:Mortal ; rdfs:label "Danaë"@en ; rdfs:label "达那厄"@zh .
+ent:alcmene a gmo:Mortal ; rdfs:label "Alcmene"@en ; rdfs:label "阿尔克墨涅"@zh .
+ent:athena a gmo:Olympian, gmo:Deity ; rdfs:label "Athena"@en ; rdfs:label "雅典娜"@zh .
+ent:apollo a gmo:Olympian, gmo:Deity ; rdfs:label "Apollo"@en ; rdfs:label "阿波罗"@zh .
+ent:artemis a gmo:Olympian, gmo:Deity ; rdfs:label "Artemis"@en ; rdfs:label "阿耳忒弥斯"@zh .
+ent:hermes a gmo:Olympian, gmo:Deity ; rdfs:label "Hermes"@en ; rdfs:label "赫尔墨斯"@zh .
+ent:dionysus a gmo:Olympian, gmo:Deity ; rdfs:label "Dionysus"@en ; rdfs:label "狄俄尼索斯"@zh .
+ent:perseus a gmo:Demigod, gmo:Hero ; rdfs:label "Perseus"@en ; rdfs:label "珀尔修斯"@zh .
+ent:heracles a gmo:Demigod, gmo:Hero ; rdfs:label "Heracles"@en ; rdfs:label "赫拉克勒斯"@zh .
+ent:ares a gmo:Olympian, gmo:Deity ; rdfs:label "Ares"@en ; rdfs:label "阿瑞斯"@zh .
+ent:aphrodite a gmo:Olympian, gmo:Deity ; rdfs:label "Aphrodite"@en ; rdfs:label "阿佛洛狄忒"@zh .
+ent:hephaestus a gmo:Olympian, gmo:Deity ; rdfs:label "Hephaestus"@en ; rdfs:label "赫淮斯托斯"@zh .
+ent:achilles a gmo:Hero, gmo:Mortal ; rdfs:label "Achilles"@en ; rdfs:label "阿喀琉斯"@zh .
+ent:helen a gmo:Mortal ; rdfs:label "Helen"@en ; rdfs:label "海伦"@zh .
+ent:paris a gmo:Mortal ; rdfs:label "Paris"@en ; rdfs:label "帕里斯"@zh .
+ent:agamemnon a gmo:Mortal, gmo:Hero ; rdfs:label "Agamemnon"@en ; rdfs:label "阿伽门农"@zh .
+ent:menelaus a gmo:Mortal ; rdfs:label "Menelaus"@en ; rdfs:label "墨涅拉俄斯"@zh .
+ent:odysseus a gmo:Mortal, gmo:Hero ; rdfs:label "Odysseus"@en ; rdfs:label "奥德修斯"@zh .
+ent:penelope a gmo:Mortal ; rdfs:label "Penelope"@en ; rdfs:label "珀涅罗珀"@zh .
+ent:cadmus a gmo:Hero ; rdfs:label "Cadmus"@en ; rdfs:label "卡德摩斯"@zh .
+ent:harmonia a gmo:Deity ; rdfs:label "Harmonia"@en ; rdfs:label "哈耳摩尼亚"@zh .
+ent:polydorus a gmo:Character ; rdfs:label "Polydorus"@en ; rdfs:label "波吕多洛斯"@zh .
+ent:labdacus a gmo:Character ; rdfs:label "Labdacus"@en ; rdfs:label "拉布达科斯"@zh .
+ent:laius a gmo:Character ; rdfs:label "Laius"@en ; rdfs:label "拉伊俄斯"@zh .
+ent:jocasta a gmo:Mortal ; rdfs:label "Jocasta"@en ; rdfs:label "伊俄卡斯忒"@zh .
+ent:oedipus a gmo:Hero ; rdfs:label "Oedipus"@en ; rdfs:label "俄狄浦斯"@zh .
+ent:eteocles a gmo:Character ; rdfs:label "Eteocles"@en ; rdfs:label "厄忒俄克勒斯"@zh .
+ent:polynices a gmo:Hero ; rdfs:label "Polynices"@en ; rdfs:label "波吕涅刻斯"@zh .
+ent:antigone a gmo:Hero ; rdfs:label "Antigone"@en ; rdfs:label "安提戈涅"@zh .
+ent:ismene a gmo:Character ; rdfs:label "Ismene"@en ; rdfs:label "伊斯墨涅"@zh .
+ent:creon_thebes a gmo:Character ; rdfs:label "Creon of Thebes"@en ; rdfs:label "忒拜的克瑞翁"@zh .
+ent:haemon a gmo:Character ; rdfs:label "Haemon"@en ; rdfs:label "海蒙"@zh .
+ent:tiresias a gmo:Mortal ; rdfs:label "Tiresias"@en ; rdfs:label "忒瑞西阿斯"@zh .
+ent:jason a gmo:Hero ; rdfs:label "Jason"@en ; rdfs:label "伊阿宋"@zh .
+ent:medea a gmo:Character ; rdfs:label "Medea"@en ; rdfs:label "美狄亚"@zh .
+ent:aeetes a gmo:Character ; rdfs:label "Aeetes"@en ; rdfs:label "埃厄忒斯"@zh .
+ent:idyia a gmo:Character ; rdfs:label "Idyia"@en ; rdfs:label "伊底伊亚"@zh .
+ent:aeson a gmo:Character ; rdfs:label "Aeson"@en ; rdfs:label "埃宋"@zh .
+ent:pelias a gmo:Character ; rdfs:label "Pelias"@en ; rdfs:label "珀利阿斯"@zh .
+ent:acastus a gmo:Hero ; rdfs:label "Acastus"@en ; rdfs:label "阿卡斯托斯"@zh .
+ent:orpheus a gmo:Hero ; rdfs:label "Orpheus"@en ; rdfs:label "俄耳甫斯"@zh .
+ent:castor a gmo:Hero ; rdfs:label "Castor"@en ; rdfs:label "卡斯托耳"@zh .
+ent:polydeuces a gmo:Hero ; rdfs:label "Polydeuces"@en ; rdfs:label "波吕丢刻斯"@zh .
+ent:peleus a gmo:Hero ; rdfs:label "Peleus"@en ; rdfs:label "珀琉斯"@zh .
+ent:atalanta a gmo:Hero, gmo:Mortal ; rdfs:label "Atalanta"@en ; rdfs:label "阿塔兰忒"@zh .
+ent:talos a gmo:Creature ; rdfs:label "Talos"@en ; rdfs:label "塔洛斯"@zh .
+ent:tantalus a gmo:Character ; rdfs:label "Tantalus"@en ; rdfs:label "坦塔罗斯"@zh .
+ent:pelops a gmo:Hero ; rdfs:label "Pelops"@en ; rdfs:label "珀罗普斯"@zh .
+ent:hippodamia a gmo:Character ; rdfs:label "Hippodamia"@en ; rdfs:label "希波达弥亚"@zh .
+ent:atreus a gmo:Character ; rdfs:label "Atreus"@en ; rdfs:label "阿特柔斯"@zh .
+ent:thyestes a gmo:Character ; rdfs:label "Thyestes"@en ; rdfs:label "梯厄斯忒斯"@zh .
+ent:aerope a gmo:Character ; rdfs:label "Aerope"@en ; rdfs:label "埃洛珀"@zh .
+ent:aegisthus a gmo:Character ; rdfs:label "Aegisthus"@en ; rdfs:label "埃癸斯托斯"@zh .
+ent:clytemnestra a gmo:Character ; rdfs:label "Clytemnestra"@en ; rdfs:label "克吕泰涅斯特拉"@zh .
+ent:orestes a gmo:Hero ; rdfs:label "Orestes"@en ; rdfs:label "俄瑞斯忒斯"@zh .
+ent:electra a gmo:Character ; rdfs:label "Electra"@en ; rdfs:label "厄勒克特拉"@zh .
+ent:iphigenia a gmo:Character ; rdfs:label "Iphigenia"@en ; rdfs:label "伊菲革涅亚"@zh .
+ent:chrysothemis a gmo:Character ; rdfs:label "Chrysothemis"@en ; rdfs:label "克律索忒弥斯"@zh .
+ent:priam a gmo:Character ; rdfs:label "Priam"@en ; rdfs:label "普里阿摩斯"@zh .
+ent:hecuba a gmo:Character ; rdfs:label "Hecuba"@en ; rdfs:label "赫卡柏"@zh .
+ent:hector a gmo:Hero ; rdfs:label "Hector"@en ; rdfs:label "赫克托耳"@zh .
+ent:cassandra a gmo:Character ; rdfs:label "Cassandra"@en ; rdfs:label "卡珊德拉"@zh .
+ent:andromache a gmo:Character ; rdfs:label "Andromache"@en ; rdfs:label "安德洛玛刻"@zh .
+ent:thetis a gmo:Deity ; rdfs:label "Thetis"@en ; rdfs:label "忒提斯"@zh .
+ent:patroclus a gmo:Hero ; rdfs:label "Patroclus"@en ; rdfs:label "帕特罗克洛斯"@zh .
+ent:andromeda a gmo:Character ; rdfs:label "Andromeda"@en ; rdfs:label "安德洛墨达"@zh .
+ent:medusa a gmo:Creature ; rdfs:label "Medusa"@en ; rdfs:label "美杜莎"@zh .
+ent:minos a gmo:Character ; rdfs:label "Minos"@en ; rdfs:label "米诺斯"@zh .
+ent:theseus a gmo:Hero ; rdfs:label "Theseus"@en ; rdfs:label "忒修斯"@zh .
+ent:ariadne a gmo:Character ; rdfs:label "Ariadne"@en ; rdfs:label "阿里阿德涅"@zh .
+ent:minotaur a gmo:Creature ; rdfs:label "Minotaur"@en ; rdfs:label "米诺陶洛斯"@zh .
+ent:eurystheus a gmo:Character ; rdfs:label "Eurystheus"@en ; rdfs:label "欧律斯透斯"@zh .
+ent:nemean_lion a gmo:Creature ; rdfs:label "Nemean Lion"@en ; rdfs:label "涅墨亚狮子"@zh .
+ent:lernaean_hydra a gmo:Creature ; rdfs:label "Lernaean Hydra"@en ; rdfs:label "勒耳那九头蛇"@zh .
+ent:ceryneian_hind a gmo:Creature ; rdfs:label "Ceryneian Hind"@en ; rdfs:label "刻律涅亚牝鹿"@zh .
+ent:erymanthian_boar a gmo:Creature ; rdfs:label "Erymanthian Boar"@en ; rdfs:label "厄律曼托斯野猪"@zh .
+ent:augeas a gmo:Character ; rdfs:label "Augeas"@en ; rdfs:label "奥革阿斯"@zh .
+ent:stymphalian_birds a gmo:Creature ; rdfs:label "Stymphalian Birds"@en ; rdfs:label "斯廷法罗斯怪鸟"@zh .
+ent:cretan_bull a gmo:Creature ; rdfs:label "Cretan Bull"@en ; rdfs:label "克里特公牛"@zh .
+ent:diomedes_thrace a gmo:Character ; rdfs:label "Diomedes of Thrace"@en ; rdfs:label "色雷斯的狄俄墨得斯"@zh .
+ent:hippolyta a gmo:Character ; rdfs:label "Hippolyta"@en ; rdfs:label "希波吕忒"@zh .
+ent:geryon a gmo:Creature ; rdfs:label "Geryon"@en ; rdfs:label "革律翁"@zh .
+ent:cerberus a gmo:Creature ; rdfs:label "Cerberus"@en ; rdfs:label "刻耳柏洛斯"@zh .
+ent:hesperides a gmo:Character ; rdfs:label "Hesperides"@en ; rdfs:label "赫斯珀里得斯"@zh .
+ent:atlas a gmo:Titan ; rdfs:label "Atlas"@en ; rdfs:label "阿特拉斯"@zh .
+ent:deianira a gmo:Character ; rdfs:label "Deianira"@en ; rdfs:label "得伊阿尼拉"@zh .
+ent:nessus a gmo:Creature ; rdfs:label "Nessus"@en ; rdfs:label "涅索斯"@zh .
+ent:iolaus a gmo:Hero ; rdfs:label "Iolaus"@en ; rdfs:label "伊俄拉俄斯"@zh .
+ent:acrisios a gmo:Character ; rdfs:label "Acrisius"@en ; rdfs:label "阿克里西俄斯"@zh .
+ent:polydectes a gmo:Character ; rdfs:label "Polydectes"@en ; rdfs:label "波吕得克忒斯"@zh .
+ent:dictys a gmo:Mortal ; rdfs:label "Dictys"@en ; rdfs:label "狄克堤斯"@zh .
+ent:graeae a gmo:Creature ; rdfs:label "Graeae"@en ; rdfs:label "格赖埃三姐妹"@zh .
+ent:pegasus a gmo:Creature ; rdfs:label "Pegasus"@en ; rdfs:label "珀伽索斯"@zh .
+ent:chrysaor a gmo:Creature, gmo:Hero ; rdfs:label "Chrysaor"@en ; rdfs:label "克律萨俄耳"@zh .
+ent:cassiopeia a gmo:Character ; rdfs:label "Cassiopeia"@en ; rdfs:label "卡西俄珀娅"@zh .
+ent:cepheus a gmo:Character ; rdfs:label "Cepheus"@en ; rdfs:label "刻甫斯"@zh .
+ent:aegeus a gmo:Character ; rdfs:label "Aegeus"@en ; rdfs:label "埃勾斯"@zh .
+ent:aethra a gmo:Character ; rdfs:label "Aethra"@en ; rdfs:label "埃特拉"@zh .
+ent:pasiphae a gmo:Character ; rdfs:label "Pasiphae"@en ; rdfs:label "帕西淮"@zh .
+ent:daedalus a gmo:Mortal ; rdfs:label "Daedalus"@en ; rdfs:label "代达罗斯"@zh .
+ent:icarus a gmo:Mortal ; rdfs:label "Icarus"@en ; rdfs:label "伊卡洛斯"@zh .
+ent:procrustes a gmo:Character ; rdfs:label "Procrustes"@en ; rdfs:label "普罗克鲁斯忒斯"@zh .
+ent:sinis a gmo:Character ; rdfs:label "Sinis"@en ; rdfs:label "西尼斯"@zh .
+ent:phaedra a gmo:Character ; rdfs:label "Phaedra"@en ; rdfs:label "淮德拉"@zh .
+ent:hippolytus a gmo:Character ; rdfs:label "Hippolytus"@en ; rdfs:label "希波吕托斯"@zh .
+ent:pentheus a gmo:Character ; rdfs:label "Pentheus"@en ; rdfs:label "彭透斯"@zh .
+ent:agave a gmo:Character ; rdfs:label "Agave"@en ; rdfs:label "阿伽韦"@zh .
+ent:ino a gmo:Deity ; rdfs:label "Ino"@en ; rdfs:label "伊诺"@zh .
+ent:autonoe a gmo:Character ; rdfs:label "Autonoe"@en ; rdfs:label "奥托诺厄"@zh .
+ent:actaeon a gmo:Mortal ; rdfs:label "Actaeon"@en ; rdfs:label "阿克泰翁"@zh .
+ent:silenius a gmo:Deity ; rdfs:label "Silenus"@en ; rdfs:label "西勒诺斯"@zh .
+ent:maenads a gmo:Group ; rdfs:label "Maenads"@en ; rdfs:label "迈那得斯"@zh .
+ent:ampelos a gmo:Character ; rdfs:label "Ampelos"@en ; rdfs:label "安佩洛斯"@zh .
+ent:eurydice a gmo:Character ; rdfs:label "Eurydice"@en ; rdfs:label "欧律狄刻"@zh .
+ent:calliope a gmo:Deity ; rdfs:label "Calliope"@en ; rdfs:label "卡利俄珀"@zh .
+ent:oeagrus a gmo:Character ; rdfs:label "Oeagrus"@en ; rdfs:label "俄阿格罗斯"@zh .
+ent:charon a gmo:Character ; rdfs:label "Charon"@en ; rdfs:label "卡戎"@zh .
+
+src:hesiod_theogony a gmo:Source ; rdfs:label "赫西俄德《神谱》"@zh ; gmo:author "Hesiod" ; gmo:work "Theogony" .
+src:homer_iliad a gmo:Source ; rdfs:label "荷马《伊利亚特》"@zh ; gmo:author "Homer" ; gmo:work "Iliad" .
+src:homer_odyssey a gmo:Source ; rdfs:label "荷马《奥德赛》"@zh ; gmo:author "Homer" ; gmo:work "Odyssey" .
+src:apollodorus_library a gmo:Source ; rdfs:label "伪阿波罗多洛斯《书库》"@zh ; gmo:author "Pseudo-Apollodorus" ; gmo:work "Library" .
+src:apollonius_argonautica a gmo:Source ; rdfs:label "阿波罗尼奥斯《阿耳戈船英雄纪》"@zh ; gmo:author "Apollonius Rhodius" ; gmo:work "Argonautica" .
+src:aeschylus_seven a gmo:Source ; rdfs:label "埃斯库罗斯《七将攻忒拜》"@zh ; gmo:author "Aeschylus" ; gmo:work "Seven Against Thebes" .
+src:aeschylus_agamemnon a gmo:Source ; rdfs:label "埃斯库罗斯《阿伽门农》"@zh ; gmo:author "Aeschylus" ; gmo:work "Agamemnon" .
+src:apollodorus_epitome a gmo:Source ; rdfs:label "伪阿波罗多洛斯《书库·概要》"@zh ; gmo:author "Pseudo-Apollodorus" ; gmo:work "Epitome" .
+src:sophocles_oedipus a gmo:Source ; rdfs:label "索福克勒斯《俄狄浦斯王》"@zh ; gmo:author "Sophocles" ; gmo:work "Oedipus Rex" .
+src:euripides_bacchae a gmo:Source ; rdfs:label "欧里庇得斯《酒神的伴侣》"@zh ; gmo:author "Euripides" ; gmo:work "Bacchae" .
+src:euripides_hippolytus a gmo:Source ; rdfs:label "欧里庇得斯《希波吕托斯》"@zh ; gmo:author "Euripides" ; gmo:work "Hippolytus" .
+src:ovid_metamorphoses a gmo:Source ; rdfs:label "奥维德《变形记》"@zh ; gmo:author "Ovid" ; gmo:work "Metamorphoses" .
+
+claim:claim_001 a gmo:Claim ; rdf:subject ent:gaia ; rdf:predicate prop:parentOf ; rdf:object ent:uranus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 75 .
+claim:claim_002 a gmo:Claim ; rdf:subject ent:gaia ; rdf:predicate prop:parentOf ; rdf:object ent:pontus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 75 .
+claim:claim_003 a gmo:Claim ; rdf:subject ent:gaia ; rdf:predicate prop:parentOf ; rdf:object ent:ourea ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_004 a gmo:Claim ; rdf:subject ent:gaia ; rdf:predicate prop:consortOf ; rdf:object ent:uranus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 75 .
+claim:claim_005 a gmo:Claim ; rdf:subject ent:gaia ; rdf:predicate prop:motherOf ; rdf:object ent:oceanus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_006 a gmo:Claim ; rdf:subject ent:uranus ; rdf:predicate prop:fatherOf ; rdf:object ent:oceanus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_007 a gmo:Claim ; rdf:subject ent:gaia ; rdf:predicate prop:motherOf ; rdf:object ent:tethys ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_008 a gmo:Claim ; rdf:subject ent:uranus ; rdf:predicate prop:fatherOf ; rdf:object ent:tethys ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_009 a gmo:Claim ; rdf:subject ent:gaia ; rdf:predicate prop:motherOf ; rdf:object ent:hyperion ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_010 a gmo:Claim ; rdf:subject ent:uranus ; rdf:predicate prop:fatherOf ; rdf:object ent:hyperion ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_011 a gmo:Claim ; rdf:subject ent:gaia ; rdf:predicate prop:motherOf ; rdf:object ent:theia ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_012 a gmo:Claim ; rdf:subject ent:uranus ; rdf:predicate prop:fatherOf ; rdf:object ent:theia ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_013 a gmo:Claim ; rdf:subject ent:gaia ; rdf:predicate prop:motherOf ; rdf:object ent:coeus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_014 a gmo:Claim ; rdf:subject ent:uranus ; rdf:predicate prop:fatherOf ; rdf:object ent:coeus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_015 a gmo:Claim ; rdf:subject ent:gaia ; rdf:predicate prop:motherOf ; rdf:object ent:phoebe ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_016 a gmo:Claim ; rdf:subject ent:uranus ; rdf:predicate prop:fatherOf ; rdf:object ent:phoebe ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_017 a gmo:Claim ; rdf:subject ent:gaia ; rdf:predicate prop:motherOf ; rdf:object ent:iapetus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_018 a gmo:Claim ; rdf:subject ent:uranus ; rdf:predicate prop:fatherOf ; rdf:object ent:iapetus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_019 a gmo:Claim ; rdf:subject ent:gaia ; rdf:predicate prop:motherOf ; rdf:object ent:themis ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_020 a gmo:Claim ; rdf:subject ent:uranus ; rdf:predicate prop:fatherOf ; rdf:object ent:themis ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_021 a gmo:Claim ; rdf:subject ent:gaia ; rdf:predicate prop:motherOf ; rdf:object ent:mnemosyne ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_022 a gmo:Claim ; rdf:subject ent:uranus ; rdf:predicate prop:fatherOf ; rdf:object ent:mnemosyne ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_023 a gmo:Claim ; rdf:subject ent:gaia ; rdf:predicate prop:motherOf ; rdf:object ent:crius ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_024 a gmo:Claim ; rdf:subject ent:uranus ; rdf:predicate prop:fatherOf ; rdf:object ent:crius ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_025 a gmo:Claim ; rdf:subject ent:gaia ; rdf:predicate prop:motherOf ; rdf:object ent:cronus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_026 a gmo:Claim ; rdf:subject ent:uranus ; rdf:predicate prop:fatherOf ; rdf:object ent:cronus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_027 a gmo:Claim ; rdf:subject ent:gaia ; rdf:predicate prop:motherOf ; rdf:object ent:rhea ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_028 a gmo:Claim ; rdf:subject ent:uranus ; rdf:predicate prop:fatherOf ; rdf:object ent:rhea ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_029 a gmo:Claim ; rdf:subject ent:oceanus ; rdf:predicate prop:spouseOf ; rdf:object ent:tethys ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_030 a gmo:Claim ; rdf:subject ent:hyperion ; rdf:predicate prop:spouseOf ; rdf:object ent:theia ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_031 a gmo:Claim ; rdf:subject ent:coeus ; rdf:predicate prop:spouseOf ; rdf:object ent:phoebe ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_032 a gmo:Claim ; rdf:subject ent:cronus ; rdf:predicate prop:spouseOf ; rdf:object ent:rhea ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 75 .
+claim:claim_033 a gmo:Claim ; rdf:subject ent:cronus ; rdf:predicate prop:fatherOf ; rdf:object ent:hestia ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_034 a gmo:Claim ; rdf:subject ent:rhea ; rdf:predicate prop:motherOf ; rdf:object ent:hestia ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_035 a gmo:Claim ; rdf:subject ent:cronus ; rdf:predicate prop:fatherOf ; rdf:object ent:demeter ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_036 a gmo:Claim ; rdf:subject ent:rhea ; rdf:predicate prop:motherOf ; rdf:object ent:demeter ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_037 a gmo:Claim ; rdf:subject ent:cronus ; rdf:predicate prop:fatherOf ; rdf:object ent:hera ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_038 a gmo:Claim ; rdf:subject ent:rhea ; rdf:predicate prop:motherOf ; rdf:object ent:hera ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_039 a gmo:Claim ; rdf:subject ent:cronus ; rdf:predicate prop:fatherOf ; rdf:object ent:hades ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_040 a gmo:Claim ; rdf:subject ent:rhea ; rdf:predicate prop:motherOf ; rdf:object ent:hades ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_041 a gmo:Claim ; rdf:subject ent:cronus ; rdf:predicate prop:fatherOf ; rdf:object ent:poseidon ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_042 a gmo:Claim ; rdf:subject ent:rhea ; rdf:predicate prop:motherOf ; rdf:object ent:poseidon ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_043 a gmo:Claim ; rdf:subject ent:cronus ; rdf:predicate prop:fatherOf ; rdf:object ent:zeus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 75 .
+claim:claim_044 a gmo:Claim ; rdf:subject ent:rhea ; rdf:predicate prop:motherOf ; rdf:object ent:zeus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 75 .
+claim:claim_045 a gmo:Claim ; rdf:subject ent:zeus ; rdf:predicate prop:spouseOf ; rdf:object ent:hera ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_046 a gmo:Claim ; rdf:subject ent:zeus ; rdf:predicate prop:consortOf ; rdf:object ent:metis ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_047 a gmo:Claim ; rdf:subject ent:zeus ; rdf:predicate prop:consortOf ; rdf:object ent:leto ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_048 a gmo:Claim ; rdf:subject ent:zeus ; rdf:predicate prop:consortOf ; rdf:object ent:maia ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_049 a gmo:Claim ; rdf:subject ent:zeus ; rdf:predicate prop:consortOf ; rdf:object ent:semele ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_050 a gmo:Claim ; rdf:subject ent:zeus ; rdf:predicate prop:consortOf ; rdf:object ent:danae ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_051 a gmo:Claim ; rdf:subject ent:zeus ; rdf:predicate prop:consortOf ; rdf:object ent:alcmene ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_052 a gmo:Claim ; rdf:subject ent:zeus ; rdf:predicate prop:fatherOf ; rdf:object ent:athena ; gmo:reviewStatus "reviewed" ; gmo:citationScore 100 .
+claim:claim_053 a gmo:Claim ; rdf:subject ent:metis ; rdf:predicate prop:motherOf ; rdf:object ent:athena ; gmo:reviewStatus "reviewed" ; gmo:citationScore 100 .
+claim:claim_054 a gmo:Claim ; rdf:subject ent:zeus ; rdf:predicate prop:fatherOf ; rdf:object ent:apollo ; gmo:reviewStatus "reviewed" ; gmo:citationScore 100 .
+claim:claim_055 a gmo:Claim ; rdf:subject ent:leto ; rdf:predicate prop:motherOf ; rdf:object ent:apollo ; gmo:reviewStatus "reviewed" ; gmo:citationScore 100 .
+claim:claim_056 a gmo:Claim ; rdf:subject ent:zeus ; rdf:predicate prop:fatherOf ; rdf:object ent:artemis ; gmo:reviewStatus "reviewed" ; gmo:citationScore 100 .
+claim:claim_057 a gmo:Claim ; rdf:subject ent:leto ; rdf:predicate prop:motherOf ; rdf:object ent:artemis ; gmo:reviewStatus "reviewed" ; gmo:citationScore 100 .
+claim:claim_058 a gmo:Claim ; rdf:subject ent:zeus ; rdf:predicate prop:fatherOf ; rdf:object ent:hermes ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 50 .
+claim:claim_059 a gmo:Claim ; rdf:subject ent:maia ; rdf:predicate prop:motherOf ; rdf:object ent:hermes ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 50 .
+claim:claim_060 a gmo:Claim ; rdf:subject ent:zeus ; rdf:predicate prop:fatherOf ; rdf:object ent:dionysus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_061 a gmo:Claim ; rdf:subject ent:semele ; rdf:predicate prop:motherOf ; rdf:object ent:dionysus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_062 a gmo:Claim ; rdf:subject ent:zeus ; rdf:predicate prop:fatherOf ; rdf:object ent:perseus ; gmo:reviewStatus "reviewed" ; gmo:citationScore 100 .
+claim:claim_063 a gmo:Claim ; rdf:subject ent:danae ; rdf:predicate prop:motherOf ; rdf:object ent:perseus ; gmo:reviewStatus "reviewed" ; gmo:citationScore 100 .
+claim:claim_064 a gmo:Claim ; rdf:subject ent:zeus ; rdf:predicate prop:fatherOf ; rdf:object ent:heracles ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 50 .
+claim:claim_065 a gmo:Claim ; rdf:subject ent:alcmene ; rdf:predicate prop:motherOf ; rdf:object ent:heracles ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 50 .
+claim:claim_066 a gmo:Claim ; rdf:subject ent:zeus ; rdf:predicate prop:fatherOf ; rdf:object ent:ares ; gmo:reviewStatus "reviewed" ; gmo:citationScore 100 .
+claim:claim_067 a gmo:Claim ; rdf:subject ent:hera ; rdf:predicate prop:motherOf ; rdf:object ent:ares ; gmo:reviewStatus "reviewed" ; gmo:citationScore 100 .
+claim:claim_068 a gmo:Claim ; rdf:subject ent:hera ; rdf:predicate prop:motherOf ; rdf:object ent:hephaestus ; gmo:reviewStatus "reviewed" ; gmo:citationScore 100 .
+claim:claim_069 a gmo:Claim ; rdf:subject ent:zeus ; rdf:predicate prop:fatherOf ; rdf:object ent:hephaestus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_070 a gmo:Claim ; rdf:subject ent:hephaestus ; rdf:predicate prop:spouseOf ; rdf:object ent:aphrodite ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_071 a gmo:Claim ; rdf:subject ent:zeus ; rdf:predicate prop:fatherOf ; rdf:object ent:helen ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_072 a gmo:Claim ; rdf:subject ent:apollo ; rdf:predicate prop:siblingOf ; rdf:object ent:artemis ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_073 a gmo:Claim ; rdf:subject ent:agamemnon ; rdf:predicate prop:siblingOf ; rdf:object ent:menelaus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_074 a gmo:Claim ; rdf:subject ent:menelaus ; rdf:predicate prop:spouseOf ; rdf:object ent:helen ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 75 .
+claim:claim_075 a gmo:Claim ; rdf:subject ent:paris ; rdf:predicate prop:consortOf ; rdf:object ent:helen ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_076 a gmo:Claim ; rdf:subject ent:odysseus ; rdf:predicate prop:spouseOf ; rdf:object ent:penelope ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 75 .
+claim:claim_077 a gmo:Claim ; rdf:subject ent:paris ; rdf:predicate prop:kills ; rdf:object ent:achilles ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_078 a gmo:Claim ; rdf:subject ent:achilles ; rdf:predicate prop:conflictsWith ; rdf:object ent:agamemnon ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 75 .
+claim:claim_079 a gmo:Claim ; rdf:subject ent:zeus ; rdf:predicate prop:emergedFrom ; rdf:object ent:athena ; gmo:reviewStatus "reviewed" ; gmo:citationScore 100 .
+claim:claim_080 a gmo:Claim ; rdf:subject ent:cadmus ; rdf:predicate prop:fatherOf ; rdf:object ent:polydorus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_081 a gmo:Claim ; rdf:subject ent:polydorus ; rdf:predicate prop:fatherOf ; rdf:object ent:labdacus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_082 a gmo:Claim ; rdf:subject ent:labdacus ; rdf:predicate prop:fatherOf ; rdf:object ent:laius ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_083 a gmo:Claim ; rdf:subject ent:laius ; rdf:predicate prop:fatherOf ; rdf:object ent:oedipus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_084 a gmo:Claim ; rdf:subject ent:jocasta ; rdf:predicate prop:motherOf ; rdf:object ent:oedipus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_085 a gmo:Claim ; rdf:subject ent:oedipus ; rdf:predicate prop:fatherOf ; rdf:object ent:eteocles ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_086 a gmo:Claim ; rdf:subject ent:oedipus ; rdf:predicate prop:fatherOf ; rdf:object ent:polynices ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_087 a gmo:Claim ; rdf:subject ent:oedipus ; rdf:predicate prop:fatherOf ; rdf:object ent:antigone ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_088 a gmo:Claim ; rdf:subject ent:oedipus ; rdf:predicate prop:fatherOf ; rdf:object ent:ismene ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_089 a gmo:Claim ; rdf:subject ent:eteocles ; rdf:predicate prop:siblingOf ; rdf:object ent:polynices ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_090 a gmo:Claim ; rdf:subject ent:antigone ; rdf:predicate prop:siblingOf ; rdf:object ent:ismene ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_091 a gmo:Claim ; rdf:subject ent:haemon ; rdf:predicate prop:engagedTo ; rdf:object ent:antigone ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_092 a gmo:Claim ; rdf:subject ent:aeson ; rdf:predicate prop:fatherOf ; rdf:object ent:jason ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_093 a gmo:Claim ; rdf:subject ent:aeetes ; rdf:predicate prop:fatherOf ; rdf:object ent:medea ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_094 a gmo:Claim ; rdf:subject ent:idyia ; rdf:predicate prop:motherOf ; rdf:object ent:medea ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_095 a gmo:Claim ; rdf:subject ent:jason ; rdf:predicate prop:spouseOf ; rdf:object ent:medea ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_096 a gmo:Claim ; rdf:subject ent:jason ; rdf:predicate prop:memberOf ; rdf:object gmo:argonauts_group ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_097 a gmo:Claim ; rdf:subject ent:orpheus ; rdf:predicate prop:memberOf ; rdf:object gmo:argonauts_group ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_098 a gmo:Claim ; rdf:subject ent:castor ; rdf:predicate prop:memberOf ; rdf:object gmo:argonauts_group ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_099 a gmo:Claim ; rdf:subject ent:polydeuces ; rdf:predicate prop:memberOf ; rdf:object gmo:argonauts_group ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_100 a gmo:Claim ; rdf:subject ent:peleus ; rdf:predicate prop:memberOf ; rdf:object gmo:argonauts_group ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_101 a gmo:Claim ; rdf:subject ent:acastus ; rdf:predicate prop:memberOf ; rdf:object gmo:argonauts_group ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_102 a gmo:Claim ; rdf:subject ent:atalanta ; rdf:predicate prop:memberOf ; rdf:object gmo:argonauts_group ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_103 a gmo:Claim ; rdf:subject ent:tantalus ; rdf:predicate prop:fatherOf ; rdf:object ent:pelops ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_104 a gmo:Claim ; rdf:subject ent:pelops ; rdf:predicate prop:fatherOf ; rdf:object ent:atreus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_105 a gmo:Claim ; rdf:subject ent:pelops ; rdf:predicate prop:fatherOf ; rdf:object ent:thyestes ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_106 a gmo:Claim ; rdf:subject ent:hippodamia ; rdf:predicate prop:motherOf ; rdf:object ent:atreus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_107 a gmo:Claim ; rdf:subject ent:hippodamia ; rdf:predicate prop:motherOf ; rdf:object ent:thyestes ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_108 a gmo:Claim ; rdf:subject ent:atreus ; rdf:predicate prop:siblingOf ; rdf:object ent:thyestes ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_109 a gmo:Claim ; rdf:subject ent:atreus ; rdf:predicate prop:fatherOf ; rdf:object ent:agamemnon ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_110 a gmo:Claim ; rdf:subject ent:atreus ; rdf:predicate prop:fatherOf ; rdf:object ent:menelaus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_111 a gmo:Claim ; rdf:subject ent:aerope ; rdf:predicate prop:motherOf ; rdf:object ent:agamemnon ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_112 a gmo:Claim ; rdf:subject ent:aerope ; rdf:predicate prop:motherOf ; rdf:object ent:menelaus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_113 a gmo:Claim ; rdf:subject ent:agamemnon ; rdf:predicate prop:spouseOf ; rdf:object ent:clytemnestra ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_114 a gmo:Claim ; rdf:subject ent:agamemnon ; rdf:predicate prop:fatherOf ; rdf:object ent:orestes ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_115 a gmo:Claim ; rdf:subject ent:clytemnestra ; rdf:predicate prop:motherOf ; rdf:object ent:orestes ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_116 a gmo:Claim ; rdf:subject ent:agamemnon ; rdf:predicate prop:fatherOf ; rdf:object ent:electra ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_117 a gmo:Claim ; rdf:subject ent:clytemnestra ; rdf:predicate prop:motherOf ; rdf:object ent:electra ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_118 a gmo:Claim ; rdf:subject ent:agamemnon ; rdf:predicate prop:fatherOf ; rdf:object ent:iphigenia ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_119 a gmo:Claim ; rdf:subject ent:clytemnestra ; rdf:predicate prop:motherOf ; rdf:object ent:iphigenia ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_120 a gmo:Claim ; rdf:subject ent:agamemnon ; rdf:predicate prop:fatherOf ; rdf:object ent:chrysothemis ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_121 a gmo:Claim ; rdf:subject ent:clytemnestra ; rdf:predicate prop:motherOf ; rdf:object ent:chrysothemis ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_122 a gmo:Claim ; rdf:subject ent:thyestes ; rdf:predicate prop:fatherOf ; rdf:object ent:aegisthus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_123 a gmo:Claim ; rdf:subject ent:aegisthus ; rdf:predicate prop:kills ; rdf:object ent:atreus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 75 .
+claim:claim_124 a gmo:Claim ; rdf:subject ent:priam ; rdf:predicate prop:fatherOf ; rdf:object ent:paris ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_125 a gmo:Claim ; rdf:subject ent:hecuba ; rdf:predicate prop:motherOf ; rdf:object ent:paris ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_126 a gmo:Claim ; rdf:subject ent:priam ; rdf:predicate prop:fatherOf ; rdf:object ent:hector ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_127 a gmo:Claim ; rdf:subject ent:hecuba ; rdf:predicate prop:motherOf ; rdf:object ent:hector ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_128 a gmo:Claim ; rdf:subject ent:priam ; rdf:predicate prop:fatherOf ; rdf:object ent:cassandra ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_129 a gmo:Claim ; rdf:subject ent:hecuba ; rdf:predicate prop:motherOf ; rdf:object ent:cassandra ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_130 a gmo:Claim ; rdf:subject ent:hector ; rdf:predicate prop:spouseOf ; rdf:object ent:andromache ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_131 a gmo:Claim ; rdf:subject ent:peleus ; rdf:predicate prop:fatherOf ; rdf:object ent:achilles ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_132 a gmo:Claim ; rdf:subject ent:thetis ; rdf:predicate prop:motherOf ; rdf:object ent:achilles ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_133 a gmo:Claim ; rdf:subject ent:perseus ; rdf:predicate prop:spouseOf ; rdf:object ent:andromeda ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_134 a gmo:Claim ; rdf:subject ent:perseus ; rdf:predicate prop:kills ; rdf:object ent:medusa ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_135 a gmo:Claim ; rdf:subject ent:theseus ; rdf:predicate prop:kills ; rdf:object ent:minotaur ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_136 a gmo:Claim ; rdf:subject ent:ariadne ; rdf:predicate prop:consortOf ; rdf:object ent:theseus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_137 a gmo:Claim ; rdf:subject ent:eurystheus ; rdf:predicate prop:commands ; rdf:object ent:heracles ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_138 a gmo:Claim ; rdf:subject ent:heracles ; rdf:predicate prop:defeats ; rdf:object ent:nemean_lion ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_139 a gmo:Claim ; rdf:subject ent:heracles ; rdf:predicate prop:defeats ; rdf:object ent:lernaean_hydra ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_140 a gmo:Claim ; rdf:subject ent:heracles ; rdf:predicate prop:defeats ; rdf:object ent:stymphalian_birds ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_141 a gmo:Claim ; rdf:subject ent:heracles ; rdf:predicate prop:defeats ; rdf:object ent:geryon ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_142 a gmo:Claim ; rdf:subject ent:heracles ; rdf:predicate prop:defeats ; rdf:object ent:erymanthian_boar ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_143 a gmo:Claim ; rdf:subject ent:heracles ; rdf:predicate prop:defeats ; rdf:object ent:diomedes_thrace ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_144 a gmo:Claim ; rdf:subject ent:heracles ; rdf:predicate prop:defeats ; rdf:object ent:cerberus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_145 a gmo:Claim ; rdf:subject ent:iolaus ; rdf:predicate prop:helps ; rdf:object ent:heracles ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_146 a gmo:Claim ; rdf:subject ent:heracles ; rdf:predicate prop:spouseOf ; rdf:object ent:deianira ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_147 a gmo:Claim ; rdf:subject ent:nessus ; rdf:predicate prop:associatedWith ; rdf:object ent:deianira ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_148 a gmo:Claim ; rdf:subject ent:atlas ; rdf:predicate prop:helps ; rdf:object ent:heracles ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_149 a gmo:Claim ; rdf:subject ent:acrisios ; rdf:predicate prop:fatherOf ; rdf:object ent:danae ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_150 a gmo:Claim ; rdf:subject ent:polydectes ; rdf:predicate prop:commands ; rdf:object ent:perseus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_151 a gmo:Claim ; rdf:subject ent:perseus ; rdf:predicate prop:defeats ; rdf:object ent:medusa ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_152 a gmo:Claim ; rdf:subject ent:medusa ; rdf:predicate prop:associatedWith ; rdf:object ent:pegasus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_153 a gmo:Claim ; rdf:subject ent:medusa ; rdf:predicate prop:associatedWith ; rdf:object ent:chrysaor ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_154 a gmo:Claim ; rdf:subject ent:cepheus ; rdf:predicate prop:fatherOf ; rdf:object ent:andromeda ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_155 a gmo:Claim ; rdf:subject ent:cassiopeia ; rdf:predicate prop:motherOf ; rdf:object ent:andromeda ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_156 a gmo:Claim ; rdf:subject ent:aegeus ; rdf:predicate prop:fatherOf ; rdf:object ent:theseus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_157 a gmo:Claim ; rdf:subject ent:aethra ; rdf:predicate prop:motherOf ; rdf:object ent:theseus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_158 a gmo:Claim ; rdf:subject ent:minos ; rdf:predicate prop:spouseOf ; rdf:object ent:pasiphae ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_159 a gmo:Claim ; rdf:subject ent:pasiphae ; rdf:predicate prop:motherOf ; rdf:object ent:minotaur ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_160 a gmo:Claim ; rdf:subject ent:daedalus ; rdf:predicate prop:fatherOf ; rdf:object ent:icarus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_161 a gmo:Claim ; rdf:subject ent:theseus ; rdf:predicate prop:defeats ; rdf:object ent:procrustes ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_162 a gmo:Claim ; rdf:subject ent:theseus ; rdf:predicate prop:defeats ; rdf:object ent:sinis ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_163 a gmo:Claim ; rdf:subject ent:theseus ; rdf:predicate prop:spouseOf ; rdf:object ent:phaedra ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_164 a gmo:Claim ; rdf:subject ent:theseus ; rdf:predicate prop:fatherOf ; rdf:object ent:hippolytus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_165 a gmo:Claim ; rdf:subject ent:agave ; rdf:predicate prop:motherOf ; rdf:object ent:pentheus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_166 a gmo:Claim ; rdf:subject ent:pentheus ; rdf:predicate prop:conflictsWith ; rdf:object ent:dionysus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 50 .
+claim:claim_167 a gmo:Claim ; rdf:subject ent:maenads ; rdf:predicate prop:memberOf ; rdf:object gmo:dionysian_group ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_168 a gmo:Claim ; rdf:subject ent:silenius ; rdf:predicate prop:associatedWith ; rdf:object ent:dionysus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_169 a gmo:Claim ; rdf:subject ent:autonoe ; rdf:predicate prop:motherOf ; rdf:object ent:actaeon ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_170 a gmo:Claim ; rdf:subject ent:oeagrus ; rdf:predicate prop:fatherOf ; rdf:object ent:orpheus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_171 a gmo:Claim ; rdf:subject ent:calliope ; rdf:predicate prop:motherOf ; rdf:object ent:orpheus ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_172 a gmo:Claim ; rdf:subject ent:orpheus ; rdf:predicate prop:spouseOf ; rdf:object ent:eurydice ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .
+claim:claim_173 a gmo:Claim ; rdf:subject ent:orpheus ; rdf:predicate prop:associatedWith ; rdf:object ent:charon ; gmo:reviewStatus "unreviewed" ; gmo:citationScore 25 .

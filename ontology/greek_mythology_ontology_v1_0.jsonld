@@ -1,0 +1,4469 @@
+{
+  "@context": {
+    "@vocab": "https://example.org/greek-mythology-ontology/",
+    "gmo": "https://example.org/greek-mythology-ontology/",
+    "schema": "https://schema.org/",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "name_en": "schema:name",
+    "name_zh": "schema:alternateName",
+    "summary_zh": "schema:description",
+    "subject": {
+      "@id": "rdf:subject",
+      "@type": "@id"
+    },
+    "predicate": {
+      "@id": "rdf:predicate",
+      "@type": "@id"
+    },
+    "object": {
+      "@id": "rdf:object",
+      "@type": "@id"
+    },
+    "source": {
+      "@id": "schema:citation",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/chaos",
+      "@type": [
+        "gmo:PrimordialDeity"
+      ],
+      "name_en": "Chaos",
+      "name_zh": "混沌",
+      "summary_zh": "赫西俄德《神谱》开篇出现的原初存在。",
+      "gmo:generation": 0,
+      "gmo:domain": "Primordial"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/gaia",
+      "@type": [
+        "gmo:PrimordialDeity"
+      ],
+      "name_en": "Gaia",
+      "name_zh": "盖亚",
+      "summary_zh": "大地的神格化存在，许多神祇谱系的源头。",
+      "gmo:generation": 0,
+      "gmo:domain": "Primordial"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/tartarus",
+      "@type": [
+        "gmo:PrimordialDeity",
+        "gmo:Character"
+      ],
+      "name_en": "Tartarus",
+      "name_zh": "塔耳塔罗斯",
+      "summary_zh": "深渊的神格化存在，同时也是宇宙空间概念。",
+      "gmo:generation": 0,
+      "gmo:domain": "Primordial"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/eros",
+      "@type": [
+        "gmo:PrimordialDeity"
+      ],
+      "name_en": "Eros",
+      "name_zh": "厄洛斯",
+      "summary_zh": "在《神谱》中作为早期出现的原初力量之一。",
+      "gmo:generation": 0,
+      "gmo:domain": "Primordial"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/erebus",
+      "@type": [
+        "gmo:PrimordialDeity"
+      ],
+      "name_en": "Erebus",
+      "name_zh": "厄瑞玻斯",
+      "summary_zh": "幽暗的神格化存在。",
+      "gmo:generation": 0,
+      "gmo:domain": "Primordial"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/nyx",
+      "@type": [
+        "gmo:PrimordialDeity"
+      ],
+      "name_en": "Nyx",
+      "name_zh": "倪克斯",
+      "summary_zh": "黑夜女神。",
+      "gmo:generation": 0,
+      "gmo:domain": "Primordial"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/uranus",
+      "@type": [
+        "gmo:PrimordialDeity"
+      ],
+      "name_en": "Uranus",
+      "name_zh": "乌拉诺斯",
+      "summary_zh": "天空之神，与盖亚结合产生泰坦等后代。",
+      "gmo:generation": 1,
+      "gmo:domain": "Primordial"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/pontus",
+      "@type": [
+        "gmo:PrimordialDeity"
+      ],
+      "name_en": "Pontus",
+      "name_zh": "蓬托斯",
+      "summary_zh": "海的原初神格。",
+      "gmo:generation": 1,
+      "gmo:domain": "Primordial"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/ourea",
+      "@type": [
+        "gmo:PrimordialDeity",
+        "gmo:Character"
+      ],
+      "name_en": "Ourea",
+      "name_zh": "乌瑞亚",
+      "summary_zh": "群山的神格化存在。",
+      "gmo:generation": 1,
+      "gmo:domain": "Primordial"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/oceanus",
+      "@type": [
+        "gmo:Titan"
+      ],
+      "name_en": "Oceanus",
+      "name_zh": "俄刻阿诺斯",
+      "summary_zh": "十二泰坦之一。",
+      "gmo:generation": 2,
+      "gmo:domain": "Titan"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/tethys",
+      "@type": [
+        "gmo:Titan"
+      ],
+      "name_en": "Tethys",
+      "name_zh": "忒堤斯",
+      "summary_zh": "十二泰坦之一。",
+      "gmo:generation": 2,
+      "gmo:domain": "Titan"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/hyperion",
+      "@type": [
+        "gmo:Titan"
+      ],
+      "name_en": "Hyperion",
+      "name_zh": "许珀里翁",
+      "summary_zh": "十二泰坦之一。",
+      "gmo:generation": 2,
+      "gmo:domain": "Titan"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/theia",
+      "@type": [
+        "gmo:Titan"
+      ],
+      "name_en": "Theia",
+      "name_zh": "忒亚",
+      "summary_zh": "十二泰坦之一。",
+      "gmo:generation": 2,
+      "gmo:domain": "Titan"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/coeus",
+      "@type": [
+        "gmo:Titan"
+      ],
+      "name_en": "Coeus",
+      "name_zh": "科俄斯",
+      "summary_zh": "十二泰坦之一。",
+      "gmo:generation": 2,
+      "gmo:domain": "Titan"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/phoebe",
+      "@type": [
+        "gmo:Titan"
+      ],
+      "name_en": "Phoebe",
+      "name_zh": "福柏",
+      "summary_zh": "十二泰坦之一。",
+      "gmo:generation": 2,
+      "gmo:domain": "Titan"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/iapetus",
+      "@type": [
+        "gmo:Titan"
+      ],
+      "name_en": "Iapetus",
+      "name_zh": "伊阿珀托斯",
+      "summary_zh": "十二泰坦之一。",
+      "gmo:generation": 2,
+      "gmo:domain": "Titan"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/themis",
+      "@type": [
+        "gmo:Titan"
+      ],
+      "name_en": "Themis",
+      "name_zh": "忒弥斯",
+      "summary_zh": "十二泰坦之一，与秩序和神圣法则相关。",
+      "gmo:generation": 2,
+      "gmo:domain": "Titan"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/mnemosyne",
+      "@type": [
+        "gmo:Titan"
+      ],
+      "name_en": "Mnemosyne",
+      "name_zh": "谟涅摩叙涅",
+      "summary_zh": "十二泰坦之一，记忆女神。",
+      "gmo:generation": 2,
+      "gmo:domain": "Titan"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/crius",
+      "@type": [
+        "gmo:Titan"
+      ],
+      "name_en": "Crius",
+      "name_zh": "克利俄斯",
+      "summary_zh": "十二泰坦之一。",
+      "gmo:generation": 2,
+      "gmo:domain": "Titan"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/cronus",
+      "@type": [
+        "gmo:Titan"
+      ],
+      "name_en": "Cronus",
+      "name_zh": "克洛诺斯",
+      "summary_zh": "泰坦统治者，宙斯等六位神祇之父。",
+      "gmo:generation": 2,
+      "gmo:domain": "Titan"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/rhea",
+      "@type": [
+        "gmo:Titan"
+      ],
+      "name_en": "Rhea",
+      "name_zh": "瑞亚",
+      "summary_zh": "泰坦女神，宙斯等六位神祇之母。",
+      "gmo:generation": 2,
+      "gmo:domain": "Titan"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/hestia",
+      "@type": [
+        "gmo:Olympian",
+        "gmo:Deity"
+      ],
+      "name_en": "Hestia",
+      "name_zh": "赫斯提亚",
+      "summary_zh": "炉灶与家庭秩序女神。",
+      "gmo:generation": 3,
+      "gmo:domain": "Olympian"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/demeter",
+      "@type": [
+        "gmo:Olympian",
+        "gmo:Deity"
+      ],
+      "name_en": "Demeter",
+      "name_zh": "得墨忒耳",
+      "summary_zh": "农业与丰收女神。",
+      "gmo:generation": 3,
+      "gmo:domain": "Olympian"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/hera",
+      "@type": [
+        "gmo:Olympian",
+        "gmo:Deity"
+      ],
+      "name_en": "Hera",
+      "name_zh": "赫拉",
+      "summary_zh": "婚姻女神，宙斯的姐妹与妻子。",
+      "gmo:generation": 3,
+      "gmo:domain": "Olympian"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/hades",
+      "@type": [
+        "gmo:Deity"
+      ],
+      "name_en": "Hades",
+      "name_zh": "哈迪斯",
+      "summary_zh": "冥界之王，宙斯与波塞冬的兄弟。",
+      "gmo:generation": 3,
+      "gmo:domain": "OlympianGeneration"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/poseidon",
+      "@type": [
+        "gmo:Olympian",
+        "gmo:Deity"
+      ],
+      "name_en": "Poseidon",
+      "name_zh": "波塞冬",
+      "summary_zh": "海神，宙斯的兄弟。",
+      "gmo:generation": 3,
+      "gmo:domain": "Olympian"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/zeus",
+      "@type": [
+        "gmo:Olympian",
+        "gmo:Deity"
+      ],
+      "name_en": "Zeus",
+      "name_zh": "宙斯",
+      "summary_zh": "奥林匹斯众神之王，本原型的中心节点。",
+      "gmo:generation": 3,
+      "gmo:domain": "Olympian"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/metis",
+      "@type": [
+        "gmo:Character",
+        "gmo:Deity"
+      ],
+      "name_en": "Metis",
+      "name_zh": "墨提斯",
+      "summary_zh": "智慧女神，与雅典娜出生故事密切相关。",
+      "gmo:generation": 4,
+      "gmo:domain": "Consort"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/leto",
+      "@type": [
+        "gmo:Deity"
+      ],
+      "name_en": "Leto",
+      "name_zh": "勒托",
+      "summary_zh": "阿波罗与阿耳忒弥斯之母。",
+      "gmo:generation": 4,
+      "gmo:domain": "Consort"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/maia",
+      "@type": [
+        "gmo:Character",
+        "gmo:Deity"
+      ],
+      "name_en": "Maia",
+      "name_zh": "迈亚",
+      "summary_zh": "赫尔墨斯之母。",
+      "gmo:generation": 4,
+      "gmo:domain": "Consort"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/semele",
+      "@type": [
+        "gmo:Mortal"
+      ],
+      "name_en": "Semele",
+      "name_zh": "塞墨勒",
+      "summary_zh": "忒拜公主，狄俄尼索斯之母。",
+      "gmo:generation": 4,
+      "gmo:domain": "Consort"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/danae",
+      "@type": [
+        "gmo:Mortal",
+        "gmo:Character"
+      ],
+      "name_en": "Danaë",
+      "name_zh": "达那厄",
+      "summary_zh": "珀尔修斯之母。",
+      "gmo:generation": 4,
+      "gmo:domain": "Consort"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/alcmene",
+      "@type": [
+        "gmo:Mortal"
+      ],
+      "name_en": "Alcmene",
+      "name_zh": "阿尔克墨涅",
+      "summary_zh": "赫拉克勒斯之母。",
+      "gmo:generation": 4,
+      "gmo:domain": "Consort"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/athena",
+      "@type": [
+        "gmo:Olympian",
+        "gmo:Deity"
+      ],
+      "name_en": "Athena",
+      "name_zh": "雅典娜",
+      "summary_zh": "智慧与战略女神；其出生叙事具有特殊性。",
+      "gmo:generation": 4,
+      "gmo:domain": "ZeusChild"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/apollo",
+      "@type": [
+        "gmo:Olympian",
+        "gmo:Deity"
+      ],
+      "name_en": "Apollo",
+      "name_zh": "阿波罗",
+      "summary_zh": "与音乐、预言、弓术、医药等相关的神。",
+      "gmo:generation": 4,
+      "gmo:domain": "ZeusChild"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/artemis",
+      "@type": [
+        "gmo:Olympian",
+        "gmo:Deity"
+      ],
+      "name_en": "Artemis",
+      "name_zh": "阿耳忒弥斯",
+      "summary_zh": "狩猎女神，阿波罗的孪生姐妹。",
+      "gmo:generation": 4,
+      "gmo:domain": "ZeusChild"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/hermes",
+      "@type": [
+        "gmo:Olympian",
+        "gmo:Deity"
+      ],
+      "name_en": "Hermes",
+      "name_zh": "赫尔墨斯",
+      "summary_zh": "神使，与旅行、商业、边界等相关。",
+      "gmo:generation": 4,
+      "gmo:domain": "ZeusChild"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/dionysus",
+      "@type": [
+        "gmo:Olympian",
+        "gmo:Deity"
+      ],
+      "name_en": "Dionysus",
+      "name_zh": "狄俄尼索斯",
+      "summary_zh": "酒、戏剧与狂欢之神。",
+      "gmo:generation": 4,
+      "gmo:domain": "ZeusChild"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/perseus",
+      "@type": [
+        "gmo:Demigod",
+        "gmo:Hero"
+      ],
+      "name_en": "Perseus",
+      "name_zh": "珀尔修斯",
+      "summary_zh": "宙斯与达那厄之子，斩杀美杜莎的英雄。",
+      "gmo:generation": 4,
+      "gmo:domain": "Hero"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/heracles",
+      "@type": [
+        "gmo:Demigod",
+        "gmo:Hero"
+      ],
+      "name_en": "Heracles",
+      "name_zh": "赫拉克勒斯",
+      "summary_zh": "宙斯与阿尔克墨涅之子，以十二项功业著称。",
+      "gmo:generation": 4,
+      "gmo:domain": "Hero"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/ares",
+      "@type": [
+        "gmo:Olympian",
+        "gmo:Deity"
+      ],
+      "name_en": "Ares",
+      "name_zh": "阿瑞斯",
+      "summary_zh": "战争神，通常视为宙斯与赫拉之子。",
+      "gmo:generation": 4,
+      "gmo:domain": "ZeusChild"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/aphrodite",
+      "@type": [
+        "gmo:Olympian",
+        "gmo:Deity"
+      ],
+      "name_en": "Aphrodite",
+      "name_zh": "阿佛洛狄忒",
+      "summary_zh": "爱与美的女神；出生谱系存在著名版本差异。",
+      "gmo:generation": 4,
+      "gmo:domain": "Olympian"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/hephaestus",
+      "@type": [
+        "gmo:Olympian",
+        "gmo:Deity"
+      ],
+      "name_en": "Hephaestus",
+      "name_zh": "赫淮斯托斯",
+      "summary_zh": "火与锻造之神；父系叙事存在版本差异。",
+      "gmo:generation": 4,
+      "gmo:domain": "Olympian"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/achilles",
+      "@type": [
+        "gmo:Hero",
+        "gmo:Mortal"
+      ],
+      "name_en": "Achilles",
+      "name_zh": "阿喀琉斯",
+      "summary_zh": "《伊利亚特》的核心英雄之一。",
+      "gmo:generation": 5,
+      "gmo:domain": "TrojanWar"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/helen",
+      "@type": [
+        "gmo:Mortal",
+        "gmo:Character"
+      ],
+      "name_en": "Helen",
+      "name_zh": "海伦",
+      "summary_zh": "特洛伊战争叙事的关键人物。",
+      "gmo:generation": 5,
+      "gmo:domain": "TrojanWar"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/paris",
+      "@type": [
+        "gmo:Mortal",
+        "gmo:Character"
+      ],
+      "name_en": "Paris",
+      "name_zh": "帕里斯",
+      "summary_zh": "特洛伊王子，与海伦及战争起因紧密相关。",
+      "gmo:generation": 5,
+      "gmo:domain": "TrojanWar"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/agamemnon",
+      "@type": [
+        "gmo:Mortal",
+        "gmo:Character",
+        "gmo:Hero"
+      ],
+      "name_en": "Agamemnon",
+      "name_zh": "阿伽门农",
+      "summary_zh": "迈锡尼王，希腊联军统帅。",
+      "gmo:generation": 5,
+      "gmo:domain": "TrojanWar"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/menelaus",
+      "@type": [
+        "gmo:Mortal",
+        "gmo:Character"
+      ],
+      "name_en": "Menelaus",
+      "name_zh": "墨涅拉俄斯",
+      "summary_zh": "斯巴达王，海伦的丈夫。",
+      "gmo:generation": 5,
+      "gmo:domain": "TrojanWar"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/odysseus",
+      "@type": [
+        "gmo:Mortal",
+        "gmo:Character",
+        "gmo:Hero"
+      ],
+      "name_en": "Odysseus",
+      "name_zh": "奥德修斯",
+      "summary_zh": "伊萨卡王，《奥德赛》的主人公。",
+      "gmo:generation": 5,
+      "gmo:domain": "TrojanWar"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/penelope",
+      "@type": [
+        "gmo:Mortal",
+        "gmo:Character"
+      ],
+      "name_en": "Penelope",
+      "name_zh": "珀涅罗珀",
+      "summary_zh": "奥德修斯的妻子，以忠贞和智慧著称。",
+      "gmo:generation": 5,
+      "gmo:domain": "TrojanWar"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/cadmus",
+      "@type": [
+        "gmo:Hero",
+        "gmo:Character"
+      ],
+      "name_en": "Cadmus",
+      "name_zh": "卡德摩斯",
+      "summary_zh": "忒拜建城者之一，卡德摩斯家族谱系的源头人物。",
+      "gmo:generation": 5,
+      "gmo:domain": "ThebanCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/harmonia",
+      "@type": [
+        "gmo:Deity",
+        "gmo:Character"
+      ],
+      "name_en": "Harmonia",
+      "name_zh": "哈耳摩尼亚",
+      "summary_zh": "卡德摩斯的妻子，与忒拜王族谱系相连。",
+      "gmo:generation": 5,
+      "gmo:domain": "ThebanCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/polydorus",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Polydorus",
+      "name_zh": "波吕多洛斯",
+      "summary_zh": "卡德摩斯家族后裔，忒拜王统人物。",
+      "gmo:generation": 6,
+      "gmo:domain": "ThebanCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/labdacus",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Labdacus",
+      "name_zh": "拉布达科斯",
+      "summary_zh": "忒拜王，拉布达科斯家族名祖。",
+      "gmo:generation": 7,
+      "gmo:domain": "ThebanCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/laius",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Laius",
+      "name_zh": "拉伊俄斯",
+      "summary_zh": "忒拜王，俄狄浦斯之父。",
+      "gmo:generation": 8,
+      "gmo:domain": "ThebanCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/jocasta",
+      "@type": [
+        "gmo:Character",
+        "gmo:Mortal"
+      ],
+      "name_en": "Jocasta",
+      "name_zh": "伊俄卡斯忒",
+      "summary_zh": "拉伊俄斯之妻，俄狄浦斯之母；后与俄狄浦斯成婚。",
+      "gmo:generation": 8,
+      "gmo:domain": "ThebanCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/oedipus",
+      "@type": [
+        "gmo:Character",
+        "gmo:Hero"
+      ],
+      "name_en": "Oedipus",
+      "name_zh": "俄狄浦斯",
+      "summary_zh": "忒拜王，著名命运悲剧人物。",
+      "gmo:generation": 9,
+      "gmo:domain": "ThebanCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/eteocles",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Eteocles",
+      "name_zh": "厄忒俄克勒斯",
+      "summary_zh": "俄狄浦斯之子，与波吕涅刻斯争夺忒拜王位。",
+      "gmo:generation": 10,
+      "gmo:domain": "ThebanCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/polynices",
+      "@type": [
+        "gmo:Character",
+        "gmo:Hero"
+      ],
+      "name_en": "Polynices",
+      "name_zh": "波吕涅刻斯",
+      "summary_zh": "俄狄浦斯之子，七将攻忒拜传统核心人物之一。",
+      "gmo:generation": 10,
+      "gmo:domain": "ThebanCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/antigone",
+      "@type": [
+        "gmo:Character",
+        "gmo:Hero"
+      ],
+      "name_en": "Antigone",
+      "name_zh": "安提戈涅",
+      "summary_zh": "俄狄浦斯之女，因埋葬兄长而成为悲剧核心人物。",
+      "gmo:generation": 10,
+      "gmo:domain": "ThebanCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/ismene",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Ismene",
+      "name_zh": "伊斯墨涅",
+      "summary_zh": "俄狄浦斯之女，安提戈涅之妹。",
+      "gmo:generation": 10,
+      "gmo:domain": "ThebanCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/creon_thebes",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Creon of Thebes",
+      "name_zh": "忒拜的克瑞翁",
+      "summary_zh": "忒拜王族人物，在俄狄浦斯与安提戈涅传统中重要。",
+      "gmo:generation": 9,
+      "gmo:domain": "ThebanCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/haemon",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Haemon",
+      "name_zh": "海蒙",
+      "summary_zh": "克瑞翁之子，安提戈涅的未婚夫。",
+      "gmo:generation": 10,
+      "gmo:domain": "ThebanCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/tiresias",
+      "@type": [
+        "gmo:Character",
+        "gmo:Mortal"
+      ],
+      "name_en": "Tiresias",
+      "name_zh": "忒瑞西阿斯",
+      "summary_zh": "忒拜著名先知，贯穿多个神话与悲剧传统。",
+      "gmo:generation": 9,
+      "gmo:domain": "ThebanCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/jason",
+      "@type": [
+        "gmo:Hero",
+        "gmo:Character"
+      ],
+      "name_en": "Jason",
+      "name_zh": "伊阿宋",
+      "summary_zh": "阿耳戈英雄远征的领袖，为金羊毛前往科尔喀斯。",
+      "gmo:generation": 6,
+      "gmo:domain": "Argonauts"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/medea",
+      "@type": [
+        "gmo:Character",
+        "gmo:Character"
+      ],
+      "name_en": "Medea",
+      "name_zh": "美狄亚",
+      "summary_zh": "科尔喀斯公主与女巫，帮助伊阿宋取得金羊毛。",
+      "gmo:generation": 6,
+      "gmo:domain": "Argonauts"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/aeetes",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Aeetes",
+      "name_zh": "埃厄忒斯",
+      "summary_zh": "科尔喀斯王，美狄亚之父。",
+      "gmo:generation": 5,
+      "gmo:domain": "Argonauts"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/idyia",
+      "@type": [
+        "gmo:Character",
+        "gmo:Character"
+      ],
+      "name_en": "Idyia",
+      "name_zh": "伊底伊亚",
+      "summary_zh": "海洋宁芙，常见传统中为美狄亚之母。",
+      "gmo:generation": 5,
+      "gmo:domain": "Argonauts"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/aeson",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Aeson",
+      "name_zh": "埃宋",
+      "summary_zh": "伊阿宋之父。",
+      "gmo:generation": 5,
+      "gmo:domain": "Argonauts"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/pelias",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Pelias",
+      "name_zh": "珀利阿斯",
+      "summary_zh": "伊俄尔科斯王，派伊阿宋寻找金羊毛。",
+      "gmo:generation": 5,
+      "gmo:domain": "Argonauts"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/acastus",
+      "@type": [
+        "gmo:Hero",
+        "gmo:Character"
+      ],
+      "name_en": "Acastus",
+      "name_zh": "阿卡斯托斯",
+      "summary_zh": "珀利阿斯之子，阿耳戈英雄之一。",
+      "gmo:generation": 6,
+      "gmo:domain": "Argonauts"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/orpheus",
+      "@type": [
+        "gmo:Hero",
+        "gmo:Character"
+      ],
+      "name_en": "Orpheus",
+      "name_zh": "俄耳甫斯",
+      "summary_zh": "著名诗人与乐师，部分传统中为阿耳戈英雄。",
+      "gmo:generation": 6,
+      "gmo:domain": "Argonauts"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/castor",
+      "@type": [
+        "gmo:Hero",
+        "gmo:Character"
+      ],
+      "name_en": "Castor",
+      "name_zh": "卡斯托耳",
+      "summary_zh": "狄俄斯库里之一，阿耳戈英雄。",
+      "gmo:generation": 6,
+      "gmo:domain": "Argonauts"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/polydeuces",
+      "@type": [
+        "gmo:Hero",
+        "gmo:Character"
+      ],
+      "name_en": "Polydeuces",
+      "name_zh": "波吕丢刻斯",
+      "summary_zh": "狄俄斯库里之一，阿耳戈英雄。",
+      "gmo:generation": 6,
+      "gmo:domain": "Argonauts"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/peleus",
+      "@type": [
+        "gmo:Hero",
+        "gmo:Character"
+      ],
+      "name_en": "Peleus",
+      "name_zh": "珀琉斯",
+      "summary_zh": "阿喀琉斯之父，部分传统中为阿耳戈英雄。",
+      "gmo:generation": 6,
+      "gmo:domain": "Argonauts"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/atalanta",
+      "@type": [
+        "gmo:Hero",
+        "gmo:Mortal"
+      ],
+      "name_en": "Atalanta",
+      "name_zh": "阿塔兰忒",
+      "summary_zh": "著名女猎手；是否参加阿耳戈远征在传统中有差异。",
+      "gmo:generation": 6,
+      "gmo:domain": "Argonauts"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/talos",
+      "@type": [
+        "gmo:Character",
+        "gmo:Creature"
+      ],
+      "name_en": "Talos",
+      "name_zh": "塔洛斯",
+      "summary_zh": "守护克里特岛的青铜巨人，在阿耳戈归途中出现。",
+      "gmo:generation": 6,
+      "gmo:domain": "Argonauts"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/tantalus",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Tantalus",
+      "name_zh": "坦塔罗斯",
+      "summary_zh": "受诸神惩罚的王族祖先人物之一。",
+      "gmo:generation": 5,
+      "gmo:domain": "HouseOfAtreus"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/pelops",
+      "@type": [
+        "gmo:Hero",
+        "gmo:Character"
+      ],
+      "name_en": "Pelops",
+      "name_zh": "珀罗普斯",
+      "summary_zh": "伯罗奔尼撒重要王族祖先，阿特柔斯与梯厄斯忒斯之父。",
+      "gmo:generation": 6,
+      "gmo:domain": "HouseOfAtreus"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/hippodamia",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Hippodamia",
+      "name_zh": "希波达弥亚",
+      "summary_zh": "珀罗普斯之妻。",
+      "gmo:generation": 6,
+      "gmo:domain": "HouseOfAtreus"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/atreus",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Atreus",
+      "name_zh": "阿特柔斯",
+      "summary_zh": "迈锡尼王，阿伽门农与墨涅拉俄斯之父。",
+      "gmo:generation": 7,
+      "gmo:domain": "HouseOfAtreus"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/thyestes",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Thyestes",
+      "name_zh": "梯厄斯忒斯",
+      "summary_zh": "阿特柔斯之弟，与兄长争夺王权。",
+      "gmo:generation": 7,
+      "gmo:domain": "HouseOfAtreus"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/aerope",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Aerope",
+      "name_zh": "埃洛珀",
+      "summary_zh": "阿特柔斯之妻，阿伽门农与墨涅拉俄斯之母。",
+      "gmo:generation": 7,
+      "gmo:domain": "HouseOfAtreus"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/aegisthus",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Aegisthus",
+      "name_zh": "埃癸斯托斯",
+      "summary_zh": "梯厄斯忒斯之子，与克吕泰涅斯特拉共同杀害阿伽门农。",
+      "gmo:generation": 8,
+      "gmo:domain": "HouseOfAtreus"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/clytemnestra",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Clytemnestra",
+      "name_zh": "克吕泰涅斯特拉",
+      "summary_zh": "阿伽门农之妻，俄瑞斯忒斯与厄勒克特拉之母。",
+      "gmo:generation": 8,
+      "gmo:domain": "HouseOfAtreus"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/orestes",
+      "@type": [
+        "gmo:Hero",
+        "gmo:Character"
+      ],
+      "name_en": "Orestes",
+      "name_zh": "俄瑞斯忒斯",
+      "summary_zh": "阿伽门农之子，为父复仇的核心人物。",
+      "gmo:generation": 9,
+      "gmo:domain": "HouseOfAtreus"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/electra",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Electra",
+      "name_zh": "厄勒克特拉",
+      "summary_zh": "阿伽门农之女，协助俄瑞斯忒斯复仇。",
+      "gmo:generation": 9,
+      "gmo:domain": "HouseOfAtreus"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/iphigenia",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Iphigenia",
+      "name_zh": "伊菲革涅亚",
+      "summary_zh": "阿伽门农之女，与奥利斯献祭传统相关。",
+      "gmo:generation": 9,
+      "gmo:domain": "HouseOfAtreus"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/chrysothemis",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Chrysothemis",
+      "name_zh": "克律索忒弥斯",
+      "summary_zh": "阿伽门农与克吕泰涅斯特拉之女。",
+      "gmo:generation": 9,
+      "gmo:domain": "HouseOfAtreus"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/priam",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Priam",
+      "name_zh": "普里阿摩斯",
+      "summary_zh": "特洛伊末代国王，赫克托耳与帕里斯之父。",
+      "gmo:generation": 7,
+      "gmo:domain": "TrojanWar"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/hecuba",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Hecuba",
+      "name_zh": "赫卡柏",
+      "summary_zh": "特洛伊王后，普里阿摩斯之妻。",
+      "gmo:generation": 7,
+      "gmo:domain": "TrojanWar"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/hector",
+      "@type": [
+        "gmo:Hero",
+        "gmo:Character"
+      ],
+      "name_en": "Hector",
+      "name_zh": "赫克托耳",
+      "summary_zh": "特洛伊最重要的战士之一。",
+      "gmo:generation": 8,
+      "gmo:domain": "TrojanWar"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/cassandra",
+      "@type": [
+        "gmo:Character",
+        "gmo:Character"
+      ],
+      "name_en": "Cassandra",
+      "name_zh": "卡珊德拉",
+      "summary_zh": "特洛伊公主与先知。",
+      "gmo:generation": 8,
+      "gmo:domain": "TrojanWar"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/andromache",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Andromache",
+      "name_zh": "安德洛玛刻",
+      "summary_zh": "赫克托耳之妻。",
+      "gmo:generation": 8,
+      "gmo:domain": "TrojanWar"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/thetis",
+      "@type": [
+        "gmo:Character",
+        "gmo:Deity"
+      ],
+      "name_en": "Thetis",
+      "name_zh": "忒提斯",
+      "summary_zh": "海中女神，阿喀琉斯之母。",
+      "gmo:generation": 6,
+      "gmo:domain": "TrojanWar"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/patroclus",
+      "@type": [
+        "gmo:Hero"
+      ],
+      "name_en": "Patroclus",
+      "name_zh": "帕特罗克洛斯",
+      "summary_zh": "阿喀琉斯最亲密的伙伴之一。",
+      "gmo:generation": 8,
+      "gmo:domain": "TrojanWar"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/andromeda",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Andromeda",
+      "name_zh": "安德洛墨达",
+      "summary_zh": "珀尔修斯救出的公主，后成为其妻。",
+      "gmo:generation": 6,
+      "gmo:domain": "PerseusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/medusa",
+      "@type": [
+        "gmo:Creature",
+        "gmo:Character"
+      ],
+      "name_en": "Medusa",
+      "name_zh": "美杜莎",
+      "summary_zh": "戈耳工之一，被珀尔修斯斩首。",
+      "gmo:generation": 6,
+      "gmo:domain": "PerseusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/minos",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Minos",
+      "name_zh": "米诺斯",
+      "summary_zh": "克里特王，与迷宫和米诺陶洛斯传统相连。",
+      "gmo:generation": 7,
+      "gmo:domain": "Crete"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/theseus",
+      "@type": [
+        "gmo:Hero",
+        "gmo:Character"
+      ],
+      "name_en": "Theseus",
+      "name_zh": "忒修斯",
+      "summary_zh": "雅典英雄，杀死米诺陶洛斯。",
+      "gmo:generation": 8,
+      "gmo:domain": "Athens"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/ariadne",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Ariadne",
+      "name_zh": "阿里阿德涅",
+      "summary_zh": "米诺斯之女，帮助忒修斯走出迷宫。",
+      "gmo:generation": 8,
+      "gmo:domain": "Crete"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/minotaur",
+      "@type": [
+        "gmo:Creature"
+      ],
+      "name_en": "Minotaur",
+      "name_zh": "米诺陶洛斯",
+      "summary_zh": "克里特迷宫中的牛首人身怪物。",
+      "gmo:generation": 8,
+      "gmo:domain": "Crete"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/eurystheus",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Eurystheus",
+      "name_zh": "欧律斯透斯",
+      "summary_zh": "迈锡尼/梯林斯王，命令赫拉克勒斯完成十二功业。",
+      "gmo:generation": 7,
+      "gmo:domain": "HeraclesCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/nemean_lion",
+      "@type": [
+        "gmo:Creature"
+      ],
+      "name_en": "Nemean Lion",
+      "name_zh": "涅墨亚狮子",
+      "summary_zh": "刀枪难伤的怪狮，为十二功业第一项。",
+      "gmo:generation": 8,
+      "gmo:domain": "HeraclesCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/lernaean_hydra",
+      "@type": [
+        "gmo:Creature"
+      ],
+      "name_en": "Lernaean Hydra",
+      "name_zh": "勒耳那九头蛇",
+      "summary_zh": "勒耳那沼泽中的多头蛇怪。",
+      "gmo:generation": 8,
+      "gmo:domain": "HeraclesCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/ceryneian_hind",
+      "@type": [
+        "gmo:Creature"
+      ],
+      "name_en": "Ceryneian Hind",
+      "name_zh": "刻律涅亚牝鹿",
+      "summary_zh": "阿耳忒弥斯的神圣牝鹿。",
+      "gmo:generation": 8,
+      "gmo:domain": "HeraclesCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/erymanthian_boar",
+      "@type": [
+        "gmo:Creature"
+      ],
+      "name_en": "Erymanthian Boar",
+      "name_zh": "厄律曼托斯野猪",
+      "summary_zh": "赫拉克勒斯捕获的巨大野猪。",
+      "gmo:generation": 8,
+      "gmo:domain": "HeraclesCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/augeas",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Augeas",
+      "name_zh": "奥革阿斯",
+      "summary_zh": "厄利斯王，其牛圈成为十二功业之一。",
+      "gmo:generation": 7,
+      "gmo:domain": "HeraclesCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/stymphalian_birds",
+      "@type": [
+        "gmo:Creature",
+        "gmo:Character"
+      ],
+      "name_en": "Stymphalian Birds",
+      "name_zh": "斯廷法罗斯怪鸟",
+      "summary_zh": "居住于斯廷法罗斯湖的凶猛怪鸟。",
+      "gmo:generation": 8,
+      "gmo:domain": "HeraclesCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/cretan_bull",
+      "@type": [
+        "gmo:Creature"
+      ],
+      "name_en": "Cretan Bull",
+      "name_zh": "克里特公牛",
+      "summary_zh": "来自克里特的神牛。",
+      "gmo:generation": 8,
+      "gmo:domain": "HeraclesCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/diomedes_thrace",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Diomedes of Thrace",
+      "name_zh": "色雷斯的狄俄墨得斯",
+      "summary_zh": "拥有食人马群的色雷斯国王。",
+      "gmo:generation": 7,
+      "gmo:domain": "HeraclesCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/hippolyta",
+      "@type": [
+        "gmo:Character",
+        "gmo:Character"
+      ],
+      "name_en": "Hippolyta",
+      "name_zh": "希波吕忒",
+      "summary_zh": "亚马逊女王，其腰带是十二功业目标之一。",
+      "gmo:generation": 7,
+      "gmo:domain": "HeraclesCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/geryon",
+      "@type": [
+        "gmo:Creature",
+        "gmo:Character"
+      ],
+      "name_en": "Geryon",
+      "name_zh": "革律翁",
+      "summary_zh": "三身巨人，拥有著名牛群。",
+      "gmo:generation": 8,
+      "gmo:domain": "HeraclesCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/cerberus",
+      "@type": [
+        "gmo:Creature"
+      ],
+      "name_en": "Cerberus",
+      "name_zh": "刻耳柏洛斯",
+      "summary_zh": "守卫冥界的三头犬。",
+      "gmo:generation": 8,
+      "gmo:domain": "HeraclesCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/hesperides",
+      "@type": [
+        "gmo:Character",
+        "gmo:Character"
+      ],
+      "name_en": "Hesperides",
+      "name_zh": "赫斯珀里得斯",
+      "summary_zh": "守护金苹果花园的宁芙群体。",
+      "gmo:generation": 8,
+      "gmo:domain": "HeraclesCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/atlas",
+      "@type": [
+        "gmo:Titan"
+      ],
+      "name_en": "Atlas",
+      "name_zh": "阿特拉斯",
+      "summary_zh": "肩负天空的泰坦，与金苹果功业相关。",
+      "gmo:generation": 7,
+      "gmo:domain": "HeraclesCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/deianira",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Deianira",
+      "name_zh": "得伊阿尼拉",
+      "summary_zh": "赫拉克勒斯后来的妻子。",
+      "gmo:generation": 8,
+      "gmo:domain": "HeraclesCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/nessus",
+      "@type": [
+        "gmo:Character",
+        "gmo:Creature"
+      ],
+      "name_en": "Nessus",
+      "name_zh": "涅索斯",
+      "summary_zh": "与赫拉克勒斯和得伊阿尼拉结局相关的半人马。",
+      "gmo:generation": 8,
+      "gmo:domain": "HeraclesCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/iolaus",
+      "@type": [
+        "gmo:Hero"
+      ],
+      "name_en": "Iolaus",
+      "name_zh": "伊俄拉俄斯",
+      "summary_zh": "赫拉克勒斯的侄子与重要助手。",
+      "gmo:generation": 8,
+      "gmo:domain": "HeraclesCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/acrisios",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Acrisius",
+      "name_zh": "阿克里西俄斯",
+      "summary_zh": "阿尔戈斯王，达那厄之父。",
+      "gmo:generation": 6,
+      "gmo:domain": "PerseusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/polydectes",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Polydectes",
+      "name_zh": "波吕得克忒斯",
+      "summary_zh": "塞里福斯王，迫使珀尔修斯去取美杜莎首级。",
+      "gmo:generation": 7,
+      "gmo:domain": "PerseusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/dictys",
+      "@type": [
+        "gmo:Mortal"
+      ],
+      "name_en": "Dictys",
+      "name_zh": "狄克堤斯",
+      "summary_zh": "收留达那厄与珀尔修斯的人物。",
+      "gmo:generation": 7,
+      "gmo:domain": "PerseusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/graeae",
+      "@type": [
+        "gmo:Creature",
+        "gmo:Character"
+      ],
+      "name_en": "Graeae",
+      "name_zh": "格赖埃三姐妹",
+      "summary_zh": "戈耳工姐妹的亲属，珀尔修斯旅途中遇见。",
+      "gmo:generation": 7,
+      "gmo:domain": "PerseusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/pegasus",
+      "@type": [
+        "gmo:Creature"
+      ],
+      "name_en": "Pegasus",
+      "name_zh": "珀伽索斯",
+      "summary_zh": "有翼神马，与美杜莎死亡神话相关。",
+      "gmo:generation": 8,
+      "gmo:domain": "PerseusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/chrysaor",
+      "@type": [
+        "gmo:Creature",
+        "gmo:Hero"
+      ],
+      "name_en": "Chrysaor",
+      "name_zh": "克律萨俄耳",
+      "summary_zh": "由美杜莎死亡神话产生的人物。",
+      "gmo:generation": 8,
+      "gmo:domain": "PerseusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/cassiopeia",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Cassiopeia",
+      "name_zh": "卡西俄珀娅",
+      "summary_zh": "安德洛墨达之母。",
+      "gmo:generation": 7,
+      "gmo:domain": "PerseusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/cepheus",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Cepheus",
+      "name_zh": "刻甫斯",
+      "summary_zh": "安德洛墨达之父。",
+      "gmo:generation": 7,
+      "gmo:domain": "PerseusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/aegeus",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Aegeus",
+      "name_zh": "埃勾斯",
+      "summary_zh": "雅典王，忒修斯之父。",
+      "gmo:generation": 7,
+      "gmo:domain": "TheseusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/aethra",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Aethra",
+      "name_zh": "埃特拉",
+      "summary_zh": "忒修斯之母。",
+      "gmo:generation": 7,
+      "gmo:domain": "TheseusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/pasiphae",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Pasiphae",
+      "name_zh": "帕西淮",
+      "summary_zh": "米诺斯之妻，米诺陶洛斯之母。",
+      "gmo:generation": 7,
+      "gmo:domain": "TheseusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/daedalus",
+      "@type": [
+        "gmo:Character",
+        "gmo:Mortal"
+      ],
+      "name_en": "Daedalus",
+      "name_zh": "代达罗斯",
+      "summary_zh": "克里特迷宫的建造者。",
+      "gmo:generation": 8,
+      "gmo:domain": "TheseusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/icarus",
+      "@type": [
+        "gmo:Mortal"
+      ],
+      "name_en": "Icarus",
+      "name_zh": "伊卡洛斯",
+      "summary_zh": "代达罗斯之子，因飞得过高而坠亡。",
+      "gmo:generation": 9,
+      "gmo:domain": "TheseusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/procrustes",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Procrustes",
+      "name_zh": "普罗克鲁斯忒斯",
+      "summary_zh": "忒修斯赴雅典途中击败的强盗。",
+      "gmo:generation": 8,
+      "gmo:domain": "TheseusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/sinis",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Sinis",
+      "name_zh": "西尼斯",
+      "summary_zh": "忒修斯早期冒险中击败的强盗。",
+      "gmo:generation": 8,
+      "gmo:domain": "TheseusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/phaedra",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Phaedra",
+      "name_zh": "淮德拉",
+      "summary_zh": "米诺斯之女，忒修斯之妻。",
+      "gmo:generation": 8,
+      "gmo:domain": "TheseusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/hippolytus",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Hippolytus",
+      "name_zh": "希波吕托斯",
+      "summary_zh": "忒修斯之子，欧里庇得斯悲剧中的核心人物。",
+      "gmo:generation": 9,
+      "gmo:domain": "TheseusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/pentheus",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Pentheus",
+      "name_zh": "彭透斯",
+      "summary_zh": "忒拜王，拒绝狄俄尼索斯崇拜而遭毁灭。",
+      "gmo:generation": 7,
+      "gmo:domain": "DionysusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/agave",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Agave",
+      "name_zh": "阿伽韦",
+      "summary_zh": "彭透斯之母，在狂乱中杀死自己的儿子。",
+      "gmo:generation": 7,
+      "gmo:domain": "DionysusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/ino",
+      "@type": [
+        "gmo:Character",
+        "gmo:Deity"
+      ],
+      "name_en": "Ino",
+      "name_zh": "伊诺",
+      "summary_zh": "塞墨勒的姐妹，后成为海神勒科忒亚。",
+      "gmo:generation": 7,
+      "gmo:domain": "DionysusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/autonoe",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Autonoe",
+      "name_zh": "奥托诺厄",
+      "summary_zh": "卡德摩斯之女，阿克泰翁之母。",
+      "gmo:generation": 7,
+      "gmo:domain": "DionysusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/actaeon",
+      "@type": [
+        "gmo:Character",
+        "gmo:Mortal"
+      ],
+      "name_en": "Actaeon",
+      "name_zh": "阿克泰翁",
+      "summary_zh": "著名猎人，被变为鹿后遭猎犬撕裂。",
+      "gmo:generation": 8,
+      "gmo:domain": "DionysusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/silenius",
+      "@type": [
+        "gmo:Deity"
+      ],
+      "name_en": "Silenus",
+      "name_zh": "西勒诺斯",
+      "summary_zh": "狄俄尼索斯的年长随从与导师形象。",
+      "gmo:generation": 8,
+      "gmo:domain": "DionysusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/maenads",
+      "@type": [
+        "gmo:Group"
+      ],
+      "name_en": "Maenads",
+      "name_zh": "迈那得斯",
+      "summary_zh": "狄俄尼索斯的狂热女性追随者群体。",
+      "gmo:generation": 8,
+      "gmo:domain": "DionysusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/ampelos",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Ampelos",
+      "name_zh": "安佩洛斯",
+      "summary_zh": "后期狄俄尼索斯传统中的青年伴侣。",
+      "gmo:generation": 8,
+      "gmo:domain": "DionysusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/eurydice",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Eurydice",
+      "name_zh": "欧律狄刻",
+      "summary_zh": "俄耳甫斯之妻，其死亡引发冥界寻妻故事。",
+      "gmo:generation": 7,
+      "gmo:domain": "OrpheusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/calliope",
+      "@type": [
+        "gmo:Character",
+        "gmo:Deity"
+      ],
+      "name_en": "Calliope",
+      "name_zh": "卡利俄珀",
+      "summary_zh": "缪斯之一，常见传统中为俄耳甫斯之母。",
+      "gmo:generation": 6,
+      "gmo:domain": "OrpheusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/oeagrus",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Oeagrus",
+      "name_zh": "俄阿格罗斯",
+      "summary_zh": "色雷斯王，常见传统中为俄耳甫斯之父。",
+      "gmo:generation": 6,
+      "gmo:domain": "OrpheusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/entity/charon",
+      "@type": [
+        "gmo:Character"
+      ],
+      "name_en": "Charon",
+      "name_zh": "卡戎",
+      "summary_zh": "冥河摆渡人。",
+      "gmo:generation": 8,
+      "gmo:domain": "OrpheusCycle"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/place/olympus",
+      "@type": "gmo:Place",
+      "name_en": "Mount Olympus",
+      "name_zh": "奥林匹斯山",
+      "summary_zh": "奥林匹斯诸神的象征性居所。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/place/tartarus_place",
+      "@type": "gmo:Place",
+      "name_en": "Tartarus",
+      "name_zh": "塔耳塔罗斯（空间）",
+      "summary_zh": "宇宙深渊；与同名神格化存在区分建模。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/place/troy",
+      "@type": "gmo:Place",
+      "name_en": "Troy",
+      "name_zh": "特洛伊",
+      "summary_zh": "特洛伊战争的中心城市。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/place/mycenae",
+      "@type": "gmo:Place",
+      "name_en": "Mycenae",
+      "name_zh": "迈锡尼",
+      "summary_zh": "阿伽门农王权传统及赫拉克勒斯故事的重要地点。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/place/ithaca",
+      "@type": "gmo:Place",
+      "name_en": "Ithaca",
+      "name_zh": "伊萨卡",
+      "summary_zh": "奥德修斯的王国与归乡目标。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/place/thebes",
+      "@type": "gmo:Place",
+      "name_en": "Thebes",
+      "name_zh": "忒拜",
+      "summary_zh": "塞墨勒、狄俄尼索斯和赫拉克勒斯传统的重要城市。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/place/colchis",
+      "@type": "gmo:Place",
+      "name_en": "Colchis",
+      "name_zh": "科尔喀斯",
+      "summary_zh": "金羊毛所在地，美狄亚与埃厄忒斯的王国。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/place/iolcus",
+      "@type": "gmo:Place",
+      "name_en": "Iolcus",
+      "name_zh": "伊俄尔科斯",
+      "summary_zh": "伊阿宋与阿耳戈远征的出发地。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/place/argolis",
+      "@type": "gmo:Place",
+      "name_en": "Argolis",
+      "name_zh": "阿尔戈利斯",
+      "summary_zh": "多条王族与英雄谱系的核心地区。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/place/nemea",
+      "@type": "gmo:Place",
+      "name_en": "Nemea",
+      "name_zh": "涅墨亚",
+      "summary_zh": "涅墨亚狮子功业地点。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/place/lerna",
+      "@type": "gmo:Place",
+      "name_en": "Lerna",
+      "name_zh": "勒耳那",
+      "summary_zh": "九头蛇功业地点。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/place/erymanthus",
+      "@type": "gmo:Place",
+      "name_en": "Mount Erymanthus",
+      "name_zh": "厄律曼托斯山",
+      "summary_zh": "野猪功业地点。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/place/stymphalus",
+      "@type": "gmo:Place",
+      "name_en": "Lake Stymphalus",
+      "name_zh": "斯廷法罗斯湖",
+      "summary_zh": "怪鸟功业地点。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/place/seriphos",
+      "@type": "gmo:Place",
+      "name_en": "Seriphos",
+      "name_zh": "塞里福斯",
+      "summary_zh": "珀尔修斯成长与波吕得克忒斯统治之地。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/place/crete",
+      "@type": "gmo:Place",
+      "name_en": "Crete",
+      "name_zh": "克里特",
+      "summary_zh": "米诺斯、迷宫和米诺陶洛斯故事中心。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/place/athens",
+      "@type": "gmo:Place",
+      "name_en": "Athens",
+      "name_zh": "雅典",
+      "summary_zh": "忒修斯王权与英雄故事中心。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/place/thrace",
+      "@type": "gmo:Place",
+      "name_en": "Thrace",
+      "name_zh": "色雷斯",
+      "summary_zh": "俄耳甫斯传统与部分赫拉克勒斯功业相关地区。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/event/titanomachy",
+      "@type": "gmo:Event",
+      "name_en": "Titanomachy",
+      "name_zh": "泰坦之战",
+      "summary_zh": "宙斯一代奥林匹斯神与克洛诺斯一代泰坦之间的权力战争。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/event/birth_athena",
+      "@type": "gmo:Event",
+      "name_en": "Birth of Athena",
+      "name_zh": "雅典娜诞生",
+      "summary_zh": "雅典娜从宙斯头部诞生的特殊出生叙事。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/event/trojan_war",
+      "@type": "gmo:Event",
+      "name_en": "Trojan War",
+      "name_zh": "特洛伊战争",
+      "summary_zh": "围绕特洛伊展开的英雄时代战争传统；《伊利亚特》描写其中一段。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/event/twelve_labors",
+      "@type": "gmo:Event",
+      "name_en": "Twelve Labors of Heracles",
+      "name_zh": "赫拉克勒斯十二功业",
+      "summary_zh": "赫拉克勒斯最著名的一组英雄功业传统。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/event/odysseus_homecoming",
+      "@type": "gmo:Event",
+      "name_en": "Odysseus' Homecoming",
+      "name_zh": "奥德修斯归乡",
+      "summary_zh": "特洛伊战争后奥德修斯返回伊萨卡的漫长旅程。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/event/seven_against_thebes",
+      "@type": "gmo:Event",
+      "name_en": "Seven Against Thebes",
+      "name_zh": "七将攻忒拜",
+      "summary_zh": "波吕涅刻斯与盟军进攻忒拜，俄狄浦斯两子最终互相杀死。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/event/quest_golden_fleece",
+      "@type": "gmo:Event",
+      "name_en": "Quest for the Golden Fleece",
+      "name_zh": "金羊毛远征",
+      "summary_zh": "伊阿宋率阿耳戈英雄前往科尔喀斯寻找金羊毛。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/event/murder_agamemnon",
+      "@type": "gmo:Event",
+      "name_en": "Murder of Agamemnon",
+      "name_zh": "阿伽门农之死",
+      "summary_zh": "阿伽门农从特洛伊归来后，在王族复仇链条中被杀。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/event/orestes_revenge",
+      "@type": "gmo:Event",
+      "name_en": "Orestes' Revenge",
+      "name_zh": "俄瑞斯忒斯复仇",
+      "summary_zh": "俄瑞斯忒斯为父阿伽门农复仇。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/event/labor_nemean_lion",
+      "@type": "gmo:Event",
+      "name_en": "Nemean Lion Labor",
+      "name_zh": "涅墨亚狮子功业",
+      "summary_zh": "赫拉克勒斯击杀涅墨亚狮子。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/event/labor_hydra",
+      "@type": "gmo:Event",
+      "name_en": "Lernaean Hydra Labor",
+      "name_zh": "九头蛇功业",
+      "summary_zh": "赫拉克勒斯在伊俄拉俄斯帮助下对付九头蛇。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/event/perseus_medusa",
+      "@type": "gmo:Event",
+      "name_en": "Perseus and Medusa",
+      "name_zh": "珀尔修斯斩美杜莎",
+      "summary_zh": "珀尔修斯完成取美杜莎首级的任务。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/event/theseus_minotaur",
+      "@type": "gmo:Event",
+      "name_en": "Theseus and the Minotaur",
+      "name_zh": "忒修斯与米诺陶洛斯",
+      "summary_zh": "忒修斯在阿里阿德涅帮助下进入迷宫并杀死米诺陶洛斯。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/event/pentheus_bacchae",
+      "@type": "gmo:Event",
+      "name_en": "Pentheus and Dionysus",
+      "name_zh": "彭透斯与狄俄尼索斯",
+      "summary_zh": "彭透斯拒绝酒神崇拜并遭到毁灭。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/event/orpheus_underworld",
+      "@type": "gmo:Event",
+      "name_en": "Orpheus in the Underworld",
+      "name_zh": "俄耳甫斯下冥界",
+      "summary_zh": "俄耳甫斯为带回欧律狄刻进入冥界。"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/source/hesiod_theogony",
+      "@type": "gmo:Source",
+      "schema:author": "Hesiod",
+      "schema:name": "Theogony",
+      "schema:alternateName": "赫西俄德《神谱》",
+      "gmo:canonicalUri": "https://www.theoi.com/Text/HesiodTheogony.html"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/source/homer_iliad",
+      "@type": "gmo:Source",
+      "schema:author": "Homer",
+      "schema:name": "Iliad",
+      "schema:alternateName": "荷马《伊利亚特》",
+      "gmo:canonicalUri": "https://www.theoi.com/Text/HomerIliad1.html"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/source/homer_odyssey",
+      "@type": "gmo:Source",
+      "schema:author": "Homer",
+      "schema:name": "Odyssey",
+      "schema:alternateName": "荷马《奥德赛》",
+      "gmo:canonicalUri": "https://www.theoi.com/Text/HomerOdyssey1.html"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/source/apollodorus_library",
+      "@type": "gmo:Source",
+      "schema:author": "Pseudo-Apollodorus",
+      "schema:name": "Library",
+      "schema:alternateName": "伪阿波罗多洛斯《书库》",
+      "gmo:canonicalUri": "https://www.theoi.com/Text/Apollodorus1.html"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/source/apollonius_argonautica",
+      "@type": "gmo:Source",
+      "schema:author": "Apollonius Rhodius",
+      "schema:name": "Argonautica",
+      "schema:alternateName": "阿波罗尼奥斯《阿耳戈船英雄纪》",
+      "gmo:canonicalUri": "https://www.theoi.com/Text/ApolloniusRhodius1.html"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/source/aeschylus_seven",
+      "@type": "gmo:Source",
+      "schema:author": "Aeschylus",
+      "schema:name": "Seven Against Thebes",
+      "schema:alternateName": "埃斯库罗斯《七将攻忒拜》",
+      "gmo:canonicalUri": "https://www.theoi.com/Text/AeschylusSeven.html"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/source/aeschylus_agamemnon",
+      "@type": "gmo:Source",
+      "schema:author": "Aeschylus",
+      "schema:name": "Agamemnon",
+      "schema:alternateName": "埃斯库罗斯《阿伽门农》",
+      "gmo:canonicalUri": "https://www.theoi.com/Text/AeschylusAgamemnon.html"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/source/apollodorus_epitome",
+      "@type": "gmo:Source",
+      "schema:author": "Pseudo-Apollodorus",
+      "schema:name": "Epitome",
+      "schema:alternateName": "伪阿波罗多洛斯《书库·概要》",
+      "gmo:canonicalUri": "https://www.theoi.com/Text/ApollodorusE.html"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/source/sophocles_oedipus",
+      "@type": "gmo:Source",
+      "schema:author": "Sophocles",
+      "schema:name": "Oedipus Rex",
+      "schema:alternateName": "索福克勒斯《俄狄浦斯王》",
+      "gmo:canonicalUri": "https://www.theoi.com/Text/SophoclesOedipus.html"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/source/euripides_bacchae",
+      "@type": "gmo:Source",
+      "schema:author": "Euripides",
+      "schema:name": "Bacchae",
+      "schema:alternateName": "欧里庇得斯《酒神的伴侣》",
+      "gmo:canonicalUri": "https://www.theoi.com/Text/EuripidesBacchae.html"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/source/euripides_hippolytus",
+      "@type": "gmo:Source",
+      "schema:author": "Euripides",
+      "schema:name": "Hippolytus",
+      "schema:alternateName": "欧里庇得斯《希波吕托斯》",
+      "gmo:canonicalUri": "https://www.theoi.com/Text/EuripidesHippolytus.html"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/source/ovid_metamorphoses",
+      "@type": "gmo:Source",
+      "schema:author": "Ovid",
+      "schema:name": "Metamorphoses",
+      "schema:alternateName": "奥维德《变形记》",
+      "gmo:canonicalUri": "https://www.theoi.com/Text/OvidMetamorphoses1.html"
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_001",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/gaia",
+      "predicate": "https://example.org/greek-mythology-ontology/property/parentOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/uranus",
+      "gmo:variant": false,
+      "gmo:checksum": "34fd0b38a4a72400",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 75,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_002",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/gaia",
+      "predicate": "https://example.org/greek-mythology-ontology/property/parentOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/pontus",
+      "gmo:variant": false,
+      "gmo:checksum": "afeea52b027df902",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 75,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_003",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/gaia",
+      "predicate": "https://example.org/greek-mythology-ontology/property/parentOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/ourea",
+      "gmo:variant": false,
+      "gmo:checksum": "1cfc8f154f984035",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_004",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/gaia",
+      "predicate": "https://example.org/greek-mythology-ontology/property/consortOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/uranus",
+      "gmo:variant": false,
+      "gmo:checksum": "4a37e3c498d1eacb",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 75,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_005",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/gaia",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/oceanus",
+      "gmo:variant": false,
+      "gmo:checksum": "af11508a149e3b50",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_006",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/uranus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/oceanus",
+      "gmo:variant": false,
+      "gmo:checksum": "a95ae8c7b56a8bf7",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_007",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/gaia",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/tethys",
+      "gmo:variant": false,
+      "gmo:checksum": "46207e4733844f93",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_008",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/uranus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/tethys",
+      "gmo:variant": false,
+      "gmo:checksum": "d8ea8dd21b041c84",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_009",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/gaia",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/hyperion",
+      "gmo:variant": false,
+      "gmo:checksum": "6c25aa03d758b190",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_010",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/uranus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/hyperion",
+      "gmo:variant": false,
+      "gmo:checksum": "e38aeff54ab26636",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_011",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/gaia",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/theia",
+      "gmo:variant": false,
+      "gmo:checksum": "b8aa08f78a01fe51",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_012",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/uranus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/theia",
+      "gmo:variant": false,
+      "gmo:checksum": "54833f2e288ca628",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_013",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/gaia",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/coeus",
+      "gmo:variant": false,
+      "gmo:checksum": "75e880c29d20366b",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_014",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/uranus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/coeus",
+      "gmo:variant": false,
+      "gmo:checksum": "c7290bb61cc13cea",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_015",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/gaia",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/phoebe",
+      "gmo:variant": false,
+      "gmo:checksum": "f84866f0aa83a089",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_016",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/uranus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/phoebe",
+      "gmo:variant": false,
+      "gmo:checksum": "fab9e15058e3938f",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_017",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/gaia",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/iapetus",
+      "gmo:variant": false,
+      "gmo:checksum": "26ab29e57af1122c",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_018",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/uranus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/iapetus",
+      "gmo:variant": false,
+      "gmo:checksum": "8913225c055e7cbd",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_019",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/gaia",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/themis",
+      "gmo:variant": false,
+      "gmo:checksum": "d265882fc7fc3d1b",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_020",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/uranus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/themis",
+      "gmo:variant": false,
+      "gmo:checksum": "9b5cdbcb2d568413",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_021",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/gaia",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/mnemosyne",
+      "gmo:variant": false,
+      "gmo:checksum": "0c79198055997e8c",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_022",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/uranus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/mnemosyne",
+      "gmo:variant": false,
+      "gmo:checksum": "75ec8fece3c0b637",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_023",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/gaia",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/crius",
+      "gmo:variant": false,
+      "gmo:checksum": "d7281cf6f4f7cba7",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_024",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/uranus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/crius",
+      "gmo:variant": false,
+      "gmo:checksum": "5c0091e3668f0070",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_025",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/gaia",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/cronus",
+      "gmo:variant": false,
+      "gmo:checksum": "63b311cbe1de3bfb",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_026",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/uranus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/cronus",
+      "gmo:variant": false,
+      "gmo:checksum": "afba8dff042fd8c8",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_027",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/gaia",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/rhea",
+      "gmo:variant": false,
+      "gmo:checksum": "852ade8bf377a773",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_028",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/uranus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/rhea",
+      "gmo:variant": false,
+      "gmo:checksum": "eadbcd6a42d5a52b",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_029",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/oceanus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/spouseOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/tethys",
+      "gmo:variant": false,
+      "gmo:checksum": "aa53da97906bcdac",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_030",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/hyperion",
+      "predicate": "https://example.org/greek-mythology-ontology/property/spouseOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/theia",
+      "gmo:variant": false,
+      "gmo:checksum": "893b108742645d98",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_031",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/coeus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/spouseOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/phoebe",
+      "gmo:variant": false,
+      "gmo:checksum": "b7d8c7baa3061a7e",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_032",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/cronus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/spouseOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/rhea",
+      "gmo:variant": false,
+      "gmo:checksum": "8e9e14c5312479ca",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 75,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_033",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/cronus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/hestia",
+      "gmo:variant": false,
+      "gmo:checksum": "9671a5b744a91880",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_034",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/rhea",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/hestia",
+      "gmo:variant": false,
+      "gmo:checksum": "157de951718d82ec",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_035",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/cronus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/demeter",
+      "gmo:variant": false,
+      "gmo:checksum": "155b76666ab96e4a",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_036",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/rhea",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/demeter",
+      "gmo:variant": false,
+      "gmo:checksum": "01be92ee4fc3ea13",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_037",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/cronus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/hera",
+      "gmo:variant": false,
+      "gmo:checksum": "3fa85cc7b35ada8e",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_038",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/rhea",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/hera",
+      "gmo:variant": false,
+      "gmo:checksum": "6fd7a6a787c03dd7",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_039",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/cronus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/hades",
+      "gmo:variant": false,
+      "gmo:checksum": "3b156054b9c250cb",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_040",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/rhea",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/hades",
+      "gmo:variant": false,
+      "gmo:checksum": "9c35392a8773676b",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_041",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/cronus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/poseidon",
+      "gmo:variant": false,
+      "gmo:checksum": "3adc89e484cadaaf",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_042",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/rhea",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/poseidon",
+      "gmo:variant": false,
+      "gmo:checksum": "6d3e16421713585d",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_043",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/cronus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/zeus",
+      "gmo:variant": false,
+      "gmo:checksum": "c2fffc5fd7f4ebd9",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 75,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_044",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/rhea",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/zeus",
+      "gmo:variant": false,
+      "gmo:checksum": "a682037d275ed674",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 75,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_045",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/zeus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/spouseOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/hera",
+      "gmo:variant": false,
+      "gmo:checksum": "5766bc99c0bc5dbd",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_046",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/zeus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/consortOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/metis",
+      "gmo:variant": false,
+      "gmo:checksum": "459e9dd5d18cc31f",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_047",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/zeus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/consortOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/leto",
+      "gmo:variant": false,
+      "gmo:checksum": "c1fd9af9dacb9085",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_048",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/zeus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/consortOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/maia",
+      "gmo:variant": false,
+      "gmo:checksum": "7918f1eaf3232107",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_049",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/zeus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/consortOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/semele",
+      "gmo:variant": false,
+      "gmo:checksum": "29fe2beff55b18b8",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_050",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/zeus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/consortOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/danae",
+      "gmo:variant": false,
+      "gmo:checksum": "12c5e0166dce5c70",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_051",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/zeus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/consortOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/alcmene",
+      "gmo:variant": false,
+      "gmo:checksum": "6150c9d27aa6bb98",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_052",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/zeus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/athena",
+      "gmo:variant": false,
+      "gmo:checksum": "c88ad244edcce1b6",
+      "gmo:reviewStatus": "reviewed",
+      "gmo:citationScore": 100,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_053",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/metis",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/athena",
+      "gmo:variant": false,
+      "gmo:checksum": "60fd582c41f75114",
+      "gmo:reviewStatus": "reviewed",
+      "gmo:citationScore": 100,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_054",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/zeus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/apollo",
+      "gmo:variant": false,
+      "gmo:checksum": "e8cb208767ee85eb",
+      "gmo:reviewStatus": "reviewed",
+      "gmo:citationScore": 100,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_055",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/leto",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/apollo",
+      "gmo:variant": false,
+      "gmo:checksum": "9c88f9239362d345",
+      "gmo:reviewStatus": "reviewed",
+      "gmo:citationScore": 100,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_056",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/zeus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/artemis",
+      "gmo:variant": false,
+      "gmo:checksum": "b15ac77ef4bd8ffc",
+      "gmo:reviewStatus": "reviewed",
+      "gmo:citationScore": 100,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_057",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/leto",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/artemis",
+      "gmo:variant": false,
+      "gmo:checksum": "87ec627a18486a55",
+      "gmo:reviewStatus": "reviewed",
+      "gmo:citationScore": 100,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_058",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/zeus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/hermes",
+      "gmo:variant": false,
+      "gmo:checksum": "2cda2a7f48c6c5ff",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 50,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_059",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/maia",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/hermes",
+      "gmo:variant": false,
+      "gmo:checksum": "acba19fb331a7fa0",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 50,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_060",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/zeus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/dionysus",
+      "gmo:variant": false,
+      "gmo:checksum": "d7c6c5afa5374553",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_061",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/semele",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/dionysus",
+      "gmo:variant": false,
+      "gmo:checksum": "37a18cfaac969566",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_062",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/zeus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/perseus",
+      "gmo:variant": false,
+      "gmo:checksum": "8382c562f20d5ae1",
+      "gmo:reviewStatus": "reviewed",
+      "gmo:citationScore": 100,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_063",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/danae",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/perseus",
+      "gmo:variant": false,
+      "gmo:checksum": "b74337c815c6d58a",
+      "gmo:reviewStatus": "reviewed",
+      "gmo:citationScore": 100,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_064",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/zeus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/heracles",
+      "gmo:variant": false,
+      "gmo:checksum": "fa303a72c2ba07c7",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 50,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_065",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/alcmene",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/heracles",
+      "gmo:variant": false,
+      "gmo:checksum": "549468bca2ae32cd",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 50,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_066",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/zeus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/ares",
+      "gmo:variant": false,
+      "gmo:checksum": "3190b275828e16ca",
+      "gmo:reviewStatus": "reviewed",
+      "gmo:citationScore": 100,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_067",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/hera",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/ares",
+      "gmo:variant": false,
+      "gmo:checksum": "7675ef16a62aeae5",
+      "gmo:reviewStatus": "reviewed",
+      "gmo:citationScore": 100,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_068",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/hera",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/hephaestus",
+      "gmo:variant": false,
+      "gmo:checksum": "71dc0dbcf1da17c9",
+      "gmo:reviewStatus": "reviewed",
+      "gmo:citationScore": 100,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_069",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/zeus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/hephaestus",
+      "gmo:variant": true,
+      "gmo:checksum": "75c01b9db5eeb5a0",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_070",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/hephaestus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/spouseOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/aphrodite",
+      "gmo:variant": true,
+      "gmo:checksum": "e1937777dffcc943",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_071",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/zeus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/helen",
+      "gmo:variant": true,
+      "gmo:checksum": "0523a2fc83b734bd",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_072",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/apollo",
+      "predicate": "https://example.org/greek-mythology-ontology/property/siblingOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/artemis",
+      "gmo:variant": false,
+      "gmo:checksum": "59ce6518ed3ff11f",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_073",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/agamemnon",
+      "predicate": "https://example.org/greek-mythology-ontology/property/siblingOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/menelaus",
+      "gmo:variant": false,
+      "gmo:checksum": "eb0ecf486d6009d0",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/homer_iliad"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_074",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/menelaus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/spouseOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/helen",
+      "gmo:variant": false,
+      "gmo:checksum": "fea548203d7bab07",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 75,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/homer_iliad"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_075",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/paris",
+      "predicate": "https://example.org/greek-mythology-ontology/property/consortOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/helen",
+      "gmo:variant": true,
+      "gmo:checksum": "0dd23a7decf89291",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/homer_iliad"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_076",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/odysseus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/spouseOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/penelope",
+      "gmo:variant": false,
+      "gmo:checksum": "ab6487c8b6666d57",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 75,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/homer_odyssey"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_077",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/paris",
+      "predicate": "https://example.org/greek-mythology-ontology/property/kills",
+      "object": "https://example.org/greek-mythology-ontology/entity/achilles",
+      "gmo:variant": true,
+      "gmo:checksum": "b5115a41980955ff",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_078",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/achilles",
+      "predicate": "https://example.org/greek-mythology-ontology/property/conflictsWith",
+      "object": "https://example.org/greek-mythology-ontology/entity/agamemnon",
+      "gmo:variant": false,
+      "gmo:checksum": "6140e3b5eefad481",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 75,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/homer_iliad"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_079",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/zeus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/emergedFrom",
+      "object": "https://example.org/greek-mythology-ontology/entity/athena",
+      "gmo:variant": false,
+      "gmo:checksum": "e95d2f79fcb54930",
+      "gmo:reviewStatus": "reviewed",
+      "gmo:citationScore": 100,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/hesiod_theogony"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_080",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/cadmus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/polydorus",
+      "gmo:variant": false,
+      "gmo:checksum": "dcca70030067d191",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_081",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/polydorus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/labdacus",
+      "gmo:variant": false,
+      "gmo:checksum": "4e09364a52eafc7b",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_082",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/labdacus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/laius",
+      "gmo:variant": false,
+      "gmo:checksum": "56f4d2bfdb340a71",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_083",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/laius",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/oedipus",
+      "gmo:variant": false,
+      "gmo:checksum": "ec4b0382aaad818b",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_084",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/jocasta",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/oedipus",
+      "gmo:variant": false,
+      "gmo:checksum": "1d3b126db23fecf5",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_085",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/oedipus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/eteocles",
+      "gmo:variant": false,
+      "gmo:checksum": "ed2aac25a91ca868",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/aeschylus_seven"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_086",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/oedipus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/polynices",
+      "gmo:variant": false,
+      "gmo:checksum": "b388b12212861dda",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/aeschylus_seven"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_087",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/oedipus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/antigone",
+      "gmo:variant": false,
+      "gmo:checksum": "98094b8c9c614245",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/aeschylus_seven"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_088",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/oedipus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/ismene",
+      "gmo:variant": false,
+      "gmo:checksum": "549e2d82b443cabe",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/aeschylus_seven"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_089",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/eteocles",
+      "predicate": "https://example.org/greek-mythology-ontology/property/siblingOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/polynices",
+      "gmo:variant": false,
+      "gmo:checksum": "5886e0354ee275f4",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/aeschylus_seven"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_090",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/antigone",
+      "predicate": "https://example.org/greek-mythology-ontology/property/siblingOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/ismene",
+      "gmo:variant": false,
+      "gmo:checksum": "ea7556c2b01874cc",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/aeschylus_seven"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_091",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/haemon",
+      "predicate": "https://example.org/greek-mythology-ontology/property/engagedTo",
+      "object": "https://example.org/greek-mythology-ontology/entity/antigone",
+      "gmo:variant": true,
+      "gmo:checksum": "c34f175d3ef7c88b",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_092",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/aeson",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/jason",
+      "gmo:variant": false,
+      "gmo:checksum": "bd4f7a73dfc80393",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_093",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/aeetes",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/medea",
+      "gmo:variant": false,
+      "gmo:checksum": "7263bb6a9f55c312",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollonius_argonautica",
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_094",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/idyia",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/medea",
+      "gmo:variant": false,
+      "gmo:checksum": "fed6c782c4dcdc2a",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollonius_argonautica"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_095",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/jason",
+      "predicate": "https://example.org/greek-mythology-ontology/property/spouseOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/medea",
+      "gmo:variant": false,
+      "gmo:checksum": "5841173d7c6a4ce2",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library",
+        "https://example.org/greek-mythology-ontology/source/apollonius_argonautica"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_096",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/jason",
+      "predicate": "https://example.org/greek-mythology-ontology/property/memberOf",
+      "object": "https://example.org/greek-mythology-ontology/group/argonauts_group",
+      "gmo:variant": false,
+      "gmo:checksum": "d21a55d575b6cfb9",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollonius_argonautica"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_097",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/orpheus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/memberOf",
+      "object": "https://example.org/greek-mythology-ontology/group/argonauts_group",
+      "gmo:variant": false,
+      "gmo:checksum": "7247709781734716",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollonius_argonautica"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_098",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/castor",
+      "predicate": "https://example.org/greek-mythology-ontology/property/memberOf",
+      "object": "https://example.org/greek-mythology-ontology/group/argonauts_group",
+      "gmo:variant": false,
+      "gmo:checksum": "3bce21ace059447f",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollonius_argonautica"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_099",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/polydeuces",
+      "predicate": "https://example.org/greek-mythology-ontology/property/memberOf",
+      "object": "https://example.org/greek-mythology-ontology/group/argonauts_group",
+      "gmo:variant": false,
+      "gmo:checksum": "7ea37a061f5f188c",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollonius_argonautica"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_100",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/peleus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/memberOf",
+      "object": "https://example.org/greek-mythology-ontology/group/argonauts_group",
+      "gmo:variant": false,
+      "gmo:checksum": "309440462f0b8b89",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollonius_argonautica"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_101",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/acastus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/memberOf",
+      "object": "https://example.org/greek-mythology-ontology/group/argonauts_group",
+      "gmo:variant": false,
+      "gmo:checksum": "06ead00639077715",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollonius_argonautica"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_102",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/atalanta",
+      "predicate": "https://example.org/greek-mythology-ontology/property/memberOf",
+      "object": "https://example.org/greek-mythology-ontology/group/argonauts_group",
+      "gmo:variant": true,
+      "gmo:checksum": "3951e85b4e43f4b2",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_103",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/tantalus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/pelops",
+      "gmo:variant": false,
+      "gmo:checksum": "7016fccc5257f03f",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_104",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/pelops",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/atreus",
+      "gmo:variant": false,
+      "gmo:checksum": "03ec62685ecac5bd",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_105",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/pelops",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/thyestes",
+      "gmo:variant": false,
+      "gmo:checksum": "5743c8419587999e",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_106",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/hippodamia",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/atreus",
+      "gmo:variant": false,
+      "gmo:checksum": "ce1b54b83813d811",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_107",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/hippodamia",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/thyestes",
+      "gmo:variant": false,
+      "gmo:checksum": "c58531c483c72cb4",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_108",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/atreus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/siblingOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/thyestes",
+      "gmo:variant": false,
+      "gmo:checksum": "99505ddba52a769e",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_epitome"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_109",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/atreus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/agamemnon",
+      "gmo:variant": false,
+      "gmo:checksum": "5f88159167c45aac",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_epitome"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_110",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/atreus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/menelaus",
+      "gmo:variant": false,
+      "gmo:checksum": "e2e7f6da72a44466",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_epitome"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_111",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/aerope",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/agamemnon",
+      "gmo:variant": false,
+      "gmo:checksum": "fbe1e5dcbc98a251",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_epitome"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_112",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/aerope",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/menelaus",
+      "gmo:variant": false,
+      "gmo:checksum": "128e16a50ffa1b0f",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_epitome"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_113",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/agamemnon",
+      "predicate": "https://example.org/greek-mythology-ontology/property/spouseOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/clytemnestra",
+      "gmo:variant": false,
+      "gmo:checksum": "6f5184b4ef818c51",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/aeschylus_agamemnon",
+        "https://example.org/greek-mythology-ontology/source/apollodorus_epitome"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_114",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/agamemnon",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/orestes",
+      "gmo:variant": false,
+      "gmo:checksum": "33103261ee8d43dc",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/aeschylus_agamemnon"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_115",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/clytemnestra",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/orestes",
+      "gmo:variant": false,
+      "gmo:checksum": "cf74763fd178b672",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/aeschylus_agamemnon"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_116",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/agamemnon",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/electra",
+      "gmo:variant": false,
+      "gmo:checksum": "c1b9c5f1251e4ce9",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/aeschylus_agamemnon"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_117",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/clytemnestra",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/electra",
+      "gmo:variant": false,
+      "gmo:checksum": "c1f78ee6997b9f0f",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/aeschylus_agamemnon"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_118",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/agamemnon",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/iphigenia",
+      "gmo:variant": false,
+      "gmo:checksum": "4fe00dfe5028a550",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/aeschylus_agamemnon"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_119",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/clytemnestra",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/iphigenia",
+      "gmo:variant": false,
+      "gmo:checksum": "41db7d012f38bd0c",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/aeschylus_agamemnon"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_120",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/agamemnon",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/chrysothemis",
+      "gmo:variant": false,
+      "gmo:checksum": "44695fc1ecda08bb",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/aeschylus_agamemnon"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_121",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/clytemnestra",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/chrysothemis",
+      "gmo:variant": false,
+      "gmo:checksum": "bb7f746b262a15f3",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/aeschylus_agamemnon"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_122",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/thyestes",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/aegisthus",
+      "gmo:variant": false,
+      "gmo:checksum": "bd347c34ef026351",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_epitome"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_123",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/aegisthus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/kills",
+      "object": "https://example.org/greek-mythology-ontology/entity/atreus",
+      "gmo:variant": false,
+      "gmo:checksum": "eae7e344c6179b79",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 75,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_epitome"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_124",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/priam",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/paris",
+      "gmo:variant": false,
+      "gmo:checksum": "82f0dcc6692bd474",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/homer_iliad"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_125",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/hecuba",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/paris",
+      "gmo:variant": false,
+      "gmo:checksum": "8df12fb7a6b51874",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/homer_iliad"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_126",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/priam",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/hector",
+      "gmo:variant": false,
+      "gmo:checksum": "66406681ae746a4c",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/homer_iliad"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_127",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/hecuba",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/hector",
+      "gmo:variant": false,
+      "gmo:checksum": "18ccc9bf0f691509",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/homer_iliad"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_128",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/priam",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/cassandra",
+      "gmo:variant": false,
+      "gmo:checksum": "eb780b57a9c9a87e",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/homer_iliad"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_129",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/hecuba",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/cassandra",
+      "gmo:variant": false,
+      "gmo:checksum": "724797aed0269df3",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/homer_iliad"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_130",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/hector",
+      "predicate": "https://example.org/greek-mythology-ontology/property/spouseOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/andromache",
+      "gmo:variant": false,
+      "gmo:checksum": "eec35dd43750bb56",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/homer_iliad"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_131",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/peleus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/achilles",
+      "gmo:variant": false,
+      "gmo:checksum": "5e389f488d6cd671",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_132",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/thetis",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/achilles",
+      "gmo:variant": false,
+      "gmo:checksum": "5d681e7d79cdf798",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_133",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/perseus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/spouseOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/andromeda",
+      "gmo:variant": false,
+      "gmo:checksum": "7395aa1a10490367",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_134",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/perseus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/kills",
+      "object": "https://example.org/greek-mythology-ontology/entity/medusa",
+      "gmo:variant": false,
+      "gmo:checksum": "917a0fc92296ea14",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_135",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/theseus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/kills",
+      "object": "https://example.org/greek-mythology-ontology/entity/minotaur",
+      "gmo:variant": false,
+      "gmo:checksum": "4761ac0f27919362",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_epitome"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_136",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/ariadne",
+      "predicate": "https://example.org/greek-mythology-ontology/property/consortOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/theseus",
+      "gmo:variant": true,
+      "gmo:checksum": "9c2fd48e1d1b8317",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_epitome"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_137",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/eurystheus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/commands",
+      "object": "https://example.org/greek-mythology-ontology/entity/heracles",
+      "gmo:variant": false,
+      "gmo:checksum": "1138df7f80018faf",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_138",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/heracles",
+      "predicate": "https://example.org/greek-mythology-ontology/property/defeats",
+      "object": "https://example.org/greek-mythology-ontology/entity/nemean_lion",
+      "gmo:variant": false,
+      "gmo:checksum": "af8a1c23102bdb10",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_139",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/heracles",
+      "predicate": "https://example.org/greek-mythology-ontology/property/defeats",
+      "object": "https://example.org/greek-mythology-ontology/entity/lernaean_hydra",
+      "gmo:variant": false,
+      "gmo:checksum": "02b50b4bae52b608",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_140",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/heracles",
+      "predicate": "https://example.org/greek-mythology-ontology/property/defeats",
+      "object": "https://example.org/greek-mythology-ontology/entity/stymphalian_birds",
+      "gmo:variant": false,
+      "gmo:checksum": "7d47bf63c9decc0e",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_141",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/heracles",
+      "predicate": "https://example.org/greek-mythology-ontology/property/defeats",
+      "object": "https://example.org/greek-mythology-ontology/entity/geryon",
+      "gmo:variant": false,
+      "gmo:checksum": "b5018fe558324d93",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_142",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/heracles",
+      "predicate": "https://example.org/greek-mythology-ontology/property/defeats",
+      "object": "https://example.org/greek-mythology-ontology/entity/erymanthian_boar",
+      "gmo:variant": false,
+      "gmo:checksum": "81ba188cdd56f724",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_143",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/heracles",
+      "predicate": "https://example.org/greek-mythology-ontology/property/defeats",
+      "object": "https://example.org/greek-mythology-ontology/entity/diomedes_thrace",
+      "gmo:variant": false,
+      "gmo:checksum": "df1e04157ef35d61",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_144",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/heracles",
+      "predicate": "https://example.org/greek-mythology-ontology/property/defeats",
+      "object": "https://example.org/greek-mythology-ontology/entity/cerberus",
+      "gmo:variant": false,
+      "gmo:checksum": "b17f975cc79b8987",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_145",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/iolaus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/helps",
+      "object": "https://example.org/greek-mythology-ontology/entity/heracles",
+      "gmo:variant": false,
+      "gmo:checksum": "422808891c78d08c",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_146",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/heracles",
+      "predicate": "https://example.org/greek-mythology-ontology/property/spouseOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/deianira",
+      "gmo:variant": false,
+      "gmo:checksum": "e2902e9db4c88319",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_147",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/nessus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/associatedWith",
+      "object": "https://example.org/greek-mythology-ontology/entity/deianira",
+      "gmo:variant": false,
+      "gmo:checksum": "bbd095c4ba3ab118",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_148",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/atlas",
+      "predicate": "https://example.org/greek-mythology-ontology/property/helps",
+      "object": "https://example.org/greek-mythology-ontology/entity/heracles",
+      "gmo:variant": true,
+      "gmo:checksum": "8d503684cf170965",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_149",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/acrisios",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/danae",
+      "gmo:variant": false,
+      "gmo:checksum": "24cd4c767aa9b09c",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_150",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/polydectes",
+      "predicate": "https://example.org/greek-mythology-ontology/property/commands",
+      "object": "https://example.org/greek-mythology-ontology/entity/perseus",
+      "gmo:variant": false,
+      "gmo:checksum": "b3fc008e8c1a8dbe",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_151",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/perseus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/defeats",
+      "object": "https://example.org/greek-mythology-ontology/entity/medusa",
+      "gmo:variant": false,
+      "gmo:checksum": "24f360d03fdafc67",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_152",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/medusa",
+      "predicate": "https://example.org/greek-mythology-ontology/property/associatedWith",
+      "object": "https://example.org/greek-mythology-ontology/entity/pegasus",
+      "gmo:variant": false,
+      "gmo:checksum": "0c0e77987d5e4a1e",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_153",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/medusa",
+      "predicate": "https://example.org/greek-mythology-ontology/property/associatedWith",
+      "object": "https://example.org/greek-mythology-ontology/entity/chrysaor",
+      "gmo:variant": false,
+      "gmo:checksum": "15401ead227b0b60",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_154",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/cepheus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/andromeda",
+      "gmo:variant": false,
+      "gmo:checksum": "ba928db10c1f6c6c",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_155",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/cassiopeia",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/andromeda",
+      "gmo:variant": false,
+      "gmo:checksum": "a266e5411f6f2d15",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_156",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/aegeus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/theseus",
+      "gmo:variant": false,
+      "gmo:checksum": "ac8c4397bbdbc954",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_epitome"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_157",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/aethra",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/theseus",
+      "gmo:variant": false,
+      "gmo:checksum": "48b99c4786009ecc",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_epitome"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_158",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/minos",
+      "predicate": "https://example.org/greek-mythology-ontology/property/spouseOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/pasiphae",
+      "gmo:variant": false,
+      "gmo:checksum": "853bda7919874f20",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_159",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/pasiphae",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/minotaur",
+      "gmo:variant": false,
+      "gmo:checksum": "e949b245f5efb2c2",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_160",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/daedalus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/icarus",
+      "gmo:variant": false,
+      "gmo:checksum": "473aacdd1673ee27",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/ovid_metamorphoses"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_161",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/theseus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/defeats",
+      "object": "https://example.org/greek-mythology-ontology/entity/procrustes",
+      "gmo:variant": false,
+      "gmo:checksum": "507aebb231bfa190",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_epitome"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_162",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/theseus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/defeats",
+      "object": "https://example.org/greek-mythology-ontology/entity/sinis",
+      "gmo:variant": false,
+      "gmo:checksum": "140101b63d93e462",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_epitome"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_163",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/theseus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/spouseOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/phaedra",
+      "gmo:variant": false,
+      "gmo:checksum": "10fded8270bc9463",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/euripides_hippolytus"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_164",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/theseus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/hippolytus",
+      "gmo:variant": false,
+      "gmo:checksum": "67efc02ca60f8f9a",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/euripides_hippolytus"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_165",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/agave",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/pentheus",
+      "gmo:variant": false,
+      "gmo:checksum": "d09e3a62e79286f6",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/euripides_bacchae"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_166",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/pentheus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/conflictsWith",
+      "object": "https://example.org/greek-mythology-ontology/entity/dionysus",
+      "gmo:variant": false,
+      "gmo:checksum": "eb7cc710cf5377e1",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 50,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/euripides_bacchae"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_167",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/maenads",
+      "predicate": "https://example.org/greek-mythology-ontology/property/memberOf",
+      "object": "https://example.org/greek-mythology-ontology/group/dionysian_group",
+      "gmo:variant": false,
+      "gmo:checksum": "137941f14059cddd",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/euripides_bacchae"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_168",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/silenius",
+      "predicate": "https://example.org/greek-mythology-ontology/property/associatedWith",
+      "object": "https://example.org/greek-mythology-ontology/entity/dionysus",
+      "gmo:variant": false,
+      "gmo:checksum": "691174388e68b44e",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_169",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/autonoe",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/actaeon",
+      "gmo:variant": false,
+      "gmo:checksum": "a35ca9ceadf81af3",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_170",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/oeagrus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/fatherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/orpheus",
+      "gmo:variant": true,
+      "gmo:checksum": "9e55bfcbcce394ca",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_171",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/calliope",
+      "predicate": "https://example.org/greek-mythology-ontology/property/motherOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/orpheus",
+      "gmo:variant": true,
+      "gmo:checksum": "eb45b91b80f1195a",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/apollodorus_library"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_172",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/orpheus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/spouseOf",
+      "object": "https://example.org/greek-mythology-ontology/entity/eurydice",
+      "gmo:variant": false,
+      "gmo:checksum": "3c127754e49cd7d8",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/ovid_metamorphoses"
+      ]
+    },
+    {
+      "@id": "https://example.org/greek-mythology-ontology/claim/claim_173",
+      "@type": "gmo:Claim",
+      "subject": "https://example.org/greek-mythology-ontology/entity/orpheus",
+      "predicate": "https://example.org/greek-mythology-ontology/property/associatedWith",
+      "object": "https://example.org/greek-mythology-ontology/entity/charon",
+      "gmo:variant": false,
+      "gmo:checksum": "d337e3a825b0975e",
+      "gmo:reviewStatus": "unreviewed",
+      "gmo:citationScore": 25,
+      "gmo:sources": [
+        "https://example.org/greek-mythology-ontology/source/ovid_metamorphoses"
+      ]
+    }
+  ]
+}

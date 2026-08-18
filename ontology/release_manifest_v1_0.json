@@ -1,0 +1,47 @@
+{
+  "name": "Greek Mythology Ontology",
+  "version": "1.0.0",
+  "releaseId": "gmo-1.0.0-bd4e28b4ca77a607",
+  "files": [
+    {
+      "name": "greek_mythology_ontology_v1_0.json",
+      "type": "application/json",
+      "role": "canonical dataset"
+    },
+    {
+      "name": "greek_mythology_ontology_v1_0.jsonld",
+      "type": "application/ld+json",
+      "role": "linked data export"
+    },
+    {
+      "name": "greek_mythology_ontology_v1_0.ttl",
+      "type": "text/turtle",
+      "role": "RDF/OWL-compatible export"
+    },
+    {
+      "name": "index.html",
+      "type": "text/html",
+      "role": "interactive viewer"
+    },
+    {
+      "name": "patch_schema_v1_0.json",
+      "type": "application/json",
+      "role": "editorial patch schema"
+    }
+  ],
+  "counts": {
+    "version": "1.0.0",
+    "characters": 148,
+    "claims": 173,
+    "events": 15,
+    "places": 17,
+    "sources": 12,
+    "cycles": 10
+  },
+  "quality": {
+    "reviewCoverage": 6.9,
+    "anchorCoverage": 12.7,
+    "stableUriCoverage": 100
+  },
+  "status": "public-beta"
+}
